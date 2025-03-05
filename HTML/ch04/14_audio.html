@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오디오 삽입하기</title>
+</head>
+<body>
+  <h3>오디오 자동 재생</h3>
+    <!-- audio 속성에 값이 없는 이유: controls="controls" 이렇게 속성과 값이 같은 경우 생략 -->
+    <audio src="./audio/JUNGWON - Monster.mp3" controls loop autoplay></audio>
+  <h3>오디오 수동 재생</h3>
+    <audio src="./audio/ENHYPEN - XO (Only If You Say Yes).mp3" controls></audio>
+  <h3>오디오 다중 재생</h3>
+    <audio controls>
+      <source src="./audio/백현 (BAEKHYUN), UMI, EL CAPITXN - Do What You Do.mp3" type="audio/mpeg">
+      <source src="./audio/JUNGWON - Monster.mp3" type="audio/mpeg">
+      <source src="./audio/ENHYPEN - XO (Only If You Say Yes).mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
