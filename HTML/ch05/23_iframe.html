@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iframe</title>
+</head>
+<body>
+  <h3>iframe 공간 분할 예시</h3>
+  <div style="background-color: #ffff00;">
+    <span>
+      <a href="./23_intro.html" target="if_a">인사말</a> |
+    </span>
+    <span>
+      <a href="./23_lecture.html" target="if_a">강좌 소개</a> |
+    </span>
+    <span>
+      <a href="./23_info.html" target="if_a">저자 소개</a> |
+    </span>
+    <span>
+      <a href="http://100apricot.tistory.com" target="if_b">저자 홈페이지</a>
+    </span>
+  </div>
+  <p/>
+  <iframe src="./23_basic.html" width="400" height="200" name="if_a" frameborder="0"></iframe>
+  <iframe src="./23_basic.html" width="400" height="200" name="if_b" scrolling="no"></iframe>
+  <div style="background-color: #ffff00;">아이티에듀넷 백살구</div>
+</body>
+</html>
