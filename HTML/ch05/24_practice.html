@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>추가 연습 예제</title>
+</head>
+<body>
+  <h3>강의 시간표</h3>
+    <table style="border-collapse: collapse; width: 80;">
+      <tr>
+        <th style="border: 1px solid black; padding: 7px;">구분</th>
+        <th style="border: 1px solid black; padding: 7px;">월</th>
+        <th style="border: 1px solid black; padding: 7px;">화</th>
+        <th style="border: 1px solid black; padding: 7px;">수</th>
+        <th style="border: 1px solid black; padding: 7px;">목</th>
+        <th style="border: 1px solid black; padding: 7px;">금</th>
+      </tr>
+      <tr>
+        <th style="border: 1px solid black; padding: 7px;">1교시</th>
+        <td style="border: 1px solid black; padding: 7px;" rowspan="2">웹 기획</td>
+        <td style="border: 1px solid black; padding: 7px;" rowspan="2">웹 디자인</td>
+        <td style="border: 1px solid black; padding: 7px;" rowspan="2">HTML</td>
+        <td style="border: 1px solid black; padding: 7px;" rowspan="2">웹 디자인</td>
+        <td style="border: 1px solid black; padding: 7px;">영어</td>
+      </tr>
+      <tr>
+        <th style="border: 1px solid black; padding: 7px;">2교시</th>
+        <td style="border: 1px solid black; padding: 7px;" rowspan="4">야외수업</td>
+      </tr>
+      <tr>
+        <th style="border: 1px solid black; padding: 7px;">3교시</th>
+        <td style="border: 1px solid black; padding: 7px;">&nbsp;</td>
+        <td style="border: 1px solid black; padding: 7px;">&nbsp;</td>
+        <td style="border: 1px solid black; padding: 7px;">&nbsp;</td>
+        <td style="border: 1px solid black; padding: 7px;">&nbsp;</td>
+      </tr>
+      <tr>
+        <th style="border: 1px solid black; padding: 7px;">4교시</th>
+        <td style="border: 1px solid black; padding: 7px;" rowspan="2">UI 디자인</td>
+        <td style="border: 1px solid black; padding: 7px;" rowspan="2">자바스크립트</td>
+        <td style="border: 1px solid black; padding: 7px;" rowspan="2">모바일 디자인</td>
+        <td style="border: 1px solid black; padding: 7px;" rowspan="2">HTML</td>
+      </tr>
+      <tr>
+        <th style="border: 1px solid black; padding: 7px;">5교시</th>
+      </tr>
+    </table>
+    <p></p>
+    <p></p>
+
+    <h3>회원 가입 양식</h3>
+    <table>
+      <tr>
+        <td>- 아이디</td>
+        <td><input type="text" name="id"></td>
+      </tr>
+      <tr>
+        <td>- 비밀번호</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>- 비밀번호 확인</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>- 이름</td>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <td>- 성별</td>
+        <td>
+          <input type="radio" name="gender">여성
+          <input type="radio" name="gender">남성
+        </td>
+      </tr>
+      <tr>
+        <td>- 전화번호</td>
+        <td>
+          <select name="call-first-num">
+            <option value="02" selected>02</option>
+            <option value="031">031</option>
+            <option value="055">055</option>
+          </select>
+          -
+          <input type="tel" name="call-second-num" pattern="[0-9],{3}" placeholder="123">
+          -
+          <input type="tel" name="call-third-num" pattern="[0-9],{4}" placeholder="4567">
+        </td>
+      </tr>
+      <tr>
+        <td>- 이메일</td>
+        <td>
+          <input type="text" name="email-first"> @ 
+          <select>
+            <option disabled selected>선택</option>
+            <option>naver.com</option>
+            <option>gmail.com</option>
+            <option>kakao.com</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>- 자기소개</td>
+        <td>
+          <textarea cols="50" rows="5"></textarea>
+        </td>
+      </tr>
+    </table>
+</body>
+</html>
