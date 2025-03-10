@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Pretendard-H';
+  src: url(../Fonts/Pretendard-Black.otf);
+}
+
+@font-face {
+  font-family: 'Pretendard-B';
+  src: url(../Fonts/Pretendard-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Pretendard-EB';
+  src: url(../Fonts/Pretendard-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: 'Pretendard-EL';
+  src: url(../Fonts/Pretendard-ExtraLight.otf);
+}
+
+@font-face {
+  font-family: 'Pretendard-L';
+  src: url(../Fonts/Pretendard-Light.otf);
+}
+
+@font-face {
+  font-family: 'Pretendard-M';
+  src: url(../Fonts/Pretendard-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Pretendard-R';
+  src: url(../Fonts/Pretendard-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Pretendard-SB';
+  src: url(../Fonts/Pretendard-SemiBold.otf);
+}
+
+@font-face {
+  font-family: 'Pretendard-T';
+  src: url(../Fonts/Pretendard-Thin.otf);
+}
+
+@font-face {
+  font-family: 'Jeju-M';
+  src: url(../Fonts/JejuMyeongjo.ttf);
+}
+
+@font-face {
+  font-family: 'Weekend';
+  src: url(../Fonts/Sunday\ Midnight\ Personal\ Use.otf);
+} 

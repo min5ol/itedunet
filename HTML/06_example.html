@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../CSS/Fonts.css">
+</head>
+<style>
+  body {
+    width: 100vw;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  header {
+    background-color: #222222;
+    width: 1340px;
+    height: 40px;
+    padding: 0 290px 0 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .h-light {
+    font-family: 'Pretendard-M';
+    font-size: 14px;
+    color: #ADADAE;
+    line-height: 10px;
+    margin-top: 14px;
+  }
+
+  nav {
+    padding-top: 6px;
+  }
+
+  nav a {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    text-align: center;
+  }
+
+  .h-menu {
+    display: inline-block;
+    margin-top: 6px;
+    font-family: 'Pretendard-R';
+    color: #ADADAE;
+    font-size: 14px;
+    line-height: 10px;
+  }
+
+  .slides {
+    width: 1920px;
+    height: 930px;
+    object-fit: fill;
+    background-image: url(./img/slide-02.jpg);
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .BrandLogo {
+    display: inline-block;
+    margin: 30px 0 0 290px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Pretendard-M';
+    font-size: 24px;
+  }
+  
+  .slide-menu {
+    display: inline-block;
+    margin: 30px 0 0 70px;
+  }
+
+  .active-menu {
+    color: #6D7BE0;
+  }
+
+  .menu {
+    color: black;
+  }
+
+  .menu, .active-menu {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    font-family: 'Pretendard-R';
+    font-size: 16px;
+  }
+
+  .slide-icon {
+    margin: 30px 0 0 595px;
+  }
+
+  .slide-icon a {
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px 0 10px ;
+    text-decoration: none;
+  }
+
+  .slide-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .SC-top {
+    font-family: 'Pretendard-M';
+    font-size: 32px;
+    margin: 200px 0 0 290px;
+  }
+
+  .SC-title {
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: 600;
+    font-size: 58px;
+    margin: 30px 0 0 290px;
+  }
+
+  .buy {
+    width: 150px;
+    height: 10px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Pretendard-M';
+    padding: 16px 15px 24px 15px;
+    background-color: #717FE0;
+    border-radius: 50px;
+    margin: 30px 0 0 290px
+  }
+
+  .Banner {
+    width: 1920;
+    height: 1000px;
+    padding: 30px 290px 0 290px;
+  }
+
+  .Banner-1 {
+    background-image: url(./img/banner-01.jpg);
+    width: 430px;
+    height: 300px;
+  }
+
+</style>
+<body>
+  <header>
+    <div class="h-light">Free shipping for standard order over $100</div>
+    <nav>
+      <a href="#" class="h-menu">Help & FAQs</a>
+      <a href="#" class="h-menu">My Account</a>
+      <a href="#" class="h-menu">EN</a>
+      <a href="#" class="h-menu">USD</a>
+    </nav>
+  </header>
+  <section class="slides">
+    <div class="slide">
+      <a href="#" class="BrandLogo"><b>COZA</b> STORE</a>
+      <div class="slide-menu">
+        <a href="#" class="active-menu">Home</a>
+        <a href="#" class="menu">Features</a>
+        <a href="#" class="menu">Blog</a>
+        <a href="#" class="menu">About</a>
+        <a href="#" class="menu">Contact</a>
+      </div>
+      <div class="slide-icon">
+        <a href="#">
+          <img src="./img/search-logo.svg">
+        </a>
+        <a href="#">
+          <img src="./img/shopping-logo.svg">
+        </a>
+        <a href="#">
+          <img src="./img/heart.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+    <div class="Slide-Contents">
+      <div class="SC-top">Men New-Season</div>
+      <div class="SC-title">JACKETS & COATS</div>
+      <a href="#" class="buy">SHOP NOW</a>
+    </div>
+  </section>
+  <section class="Banner">
+    <a href="#" class="Banner-1">
+      <span class="B-title">Women</span>
+      <span class="B-sub">Spring 2018</span>
+    </a>
+    <a href="#" class="Banner-2">
+      <span class="B-title">Women</span>
+      <span class="B-sub">Spring 2018</span>
+    </a>
+    <a href="#" class="Banner-3">
+      <span class="B-title">Women</span>
+      <span class="B-sub">Spring 2018</span>
+    </a>
+  </section>
+  <section></section>
+  <footer></footer>
+</body>
+</html>
