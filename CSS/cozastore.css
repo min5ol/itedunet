@@ -1,0 +1,85 @@
+.top-bar-containor {
+  height: 40px;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  color: rgb(102, 102, 102);
+  background-color: rgb(34, 34, 34);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 262.5px;
+  padding: 0 15px;
+}
+
+.left-top-bar {
+  font-family: 'AppleSDGothicR';
+  font-size: 12px;
+  line-height: 21.6px;
+  padding: 7px 0;
+}
+
+.right-top-bar {
+  display: flex;
+}
+
+.right-top-bar a {
+  display: flex;
+  font-family: 'AppleSDGothicR';
+  font-size: 12px;
+  line-height: 21.6px;
+  padding: 0 25px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  align-items: center;
+}
+
+.wrap-menu-containor {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 40px;
+  height: 84px;
+}
+
+.wrap-menu-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 262.5px;
+  padding: 0 15px;
+}
+
+.wrap-menu-bar img {
+  width: 20px;
+  height: 20px;
+}
+
+.BrandLogo {
+  display: flex;
+  align-items: center;
+  margin-right: 55px;
+}
+
+.BrandLogo img {
+  width: 133px;
+  height: 17px;
+}
+
+.wrap-active-tab {
+  font-family: 'AppleSDGothicEB';
+  color: #6c7ae0;;
+  font-size: 15px;
+  margin: 0 14px 0 4px;
+  padding: 20px 10px 20px 0;
+}
+
+.wrap-tab {
+  font-family: 'AppleSDGothicR';
+  font-size: 15px;
+  margin: 0 14px 0 4px;
+  padding: 20px 10px 20px 0;
+}
