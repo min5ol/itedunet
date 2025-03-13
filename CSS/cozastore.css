@@ -1,10 +1,6 @@
 .top-bar-containor {
   height: 40px;
   display: block;
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 22.5px;
   color: rgb(102, 102, 102);
   background-color: rgb(34, 34, 34);
 }
@@ -13,14 +9,15 @@
   display: flex;
   justify-content: space-between;
   margin: 0 262.5px;
-  padding: 0 15px;
 }
 
 .left-top-bar {
-  font-family: 'AppleSDGothicR';
+  display: flex;
+  height: 40px;
+  align-items: center;
+  font-family: 'Pretendard-R';
   font-size: 12px;
-  line-height: 21.6px;
-  padding: 7px 0;
+  line-height: 12px;
 }
 
 .right-top-bar {
@@ -29,13 +26,12 @@
 
 .right-top-bar a {
   display: flex;
+  align-items: center;
   font-family: 'AppleSDGothicR';
   font-size: 12px;
-  line-height: 21.6px;
   padding: 0 25px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
-  align-items: center;
 }
 
 .wrap-menu-containor {
@@ -45,41 +41,84 @@
   height: 84px;
 }
 
-.wrap-menu-bar {
+.limiter-menu-containor {
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin: 0 262.5px;
-  padding: 0 15px;
 }
 
-.wrap-menu-bar img {
-  width: 20px;
-  height: 20px;
-}
-
-.BrandLogo {
+.logo {
   display: flex;
+  cursor: pointer;
   align-items: center;
+}
+
+.logo img {
+  width: 133px;
+  height: 17px;
   margin-right: 55px;
 }
 
-.BrandLogo img {
-  width: 133px;
-  height: 17px;
+.menu {
+  display: flex;
 }
 
-.wrap-active-tab {
-  font-family: 'AppleSDGothicEB';
-  color: #6c7ae0;;
-  font-size: 15px;
-  margin: 0 14px 0 4px;
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu li {
+  margin-left: 14px;
+  margin-right: 4px;
   padding: 20px 10px 20px 0;
 }
 
-.wrap-tab {
-  font-family: 'AppleSDGothicR';
-  font-size: 15px;
-  margin: 0 14px 0 4px;
-  padding: 20px 10px 20px 0;
+.main-menu li a {
+  font-family: 'Pretendard-M';
+  text-align: left;
+  font-size: 14px;
+}
+
+.main-menu li.label1 {
+  position: relative;
+}
+
+.main-menu li.label1::after {
+  content: "hot";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -9px;
+  top: 8px;
+  border-radius: 7px;
+  font-size: 10px;
+  min-width: 32px;
+  height: 15px;
+  background-color: red;
+  color: white;
+  font-family: 'Pretendard-L';
+}
+
+.active-menu {
+  color: rgb(108, 122, 224);
+}
+
+.icon-header-item img {
+  width: 26px;
+  height: 26px;
+}
+
+.wrap-icon-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  align-items: center;
+}
+
+.icon-header-item {
+  padding: 0 11px 0 22px;
 }
