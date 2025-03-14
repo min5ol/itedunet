@@ -35,16 +35,21 @@
 }
 
 .wrap-menu-containor {
+  display: flex;
   background-color: rgba(0, 0, 0, 0);
-  position: fixed;
-  top: 40px;
   height: 84px;
+  width: 100%;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .limiter-menu-containor {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 262.5px;
 }
 
@@ -62,6 +67,7 @@
 
 .menu {
   display: flex;
+  align-items: center;
 }
 
 .main-menu {
@@ -106,7 +112,7 @@
   color: rgb(108, 122, 224);
 }
 
-.icon-header-item img {
+.wrap-icon-header a img {
   width: 26px;
   height: 26px;
 }
@@ -119,6 +125,315 @@
   align-items: center;
 }
 
-.icon-header-item {
+.icon-header-item, .icon-header-item-cart, .icon-header-item-wishlist {
+  position: relative;
   padding: 0 11px 0 22px;
 }
+
+.icon-header-item-cart::after {
+  content: "2";
+  position: absolute;
+  font-family: 'Pretendard-L';
+  font-size: 14px;
+  background-color: rgb(112, 127, 224);
+  padding: 0 5px 1px 5px;
+  text-align: center;
+  color: white;
+  top: -7px;
+}
+
+.icon-header-item-wishlist::after {
+  content: "0";
+  position: absolute;
+  font-family: 'Pretendard-L';
+  font-size: 14px;
+  background-color: rgb(112, 127, 224);
+  padding: 0 5px 1px 5px;
+  text-align: center;
+  color: white;
+  top: -7px;
+}
+
+.slick-slider {
+  background-image: url(../HTML/img/slide-02.jpg);
+  width: 1920px;
+  height: 930px;
+  object-fit: fill;
+}
+
+.containor-slick-full {
+  margin: 0 262.5px;
+  padding: 0 15px;;
+}
+
+.flex-slick {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 30px 0;
+  align-items: flex-start;
+  justify-content: center;
+  height: 930px;
+}
+
+.slick-subtitle {
+  font-family: 'Pretendard-M';
+  font-size: 28px;
+}
+
+.slick-title {
+  font-family: 'Display-B';
+  font-size: 60px;
+  padding: 19px 0 43px 0;
+}
+
+.slick-shop {
+  background-color: rgb(113, 127, 224);
+  border-radius: 30px;
+  padding: 15px 35px;
+  color: white;
+  font-family: 'Pretendard-M';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.banner-containor {
+  margin: 0 262.5px;
+  padding: 0 15px;
+  z-index: -1;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 30px 15px 30px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block-banner-1, .block-banner-2, .block-banner-3 {
+  display: block;
+  width: 428px;
+  height: 289px;
+  background-size: cover;
+  position: relative;
+  border: 1px solid rgb(230, 230, 230)
+}
+
+.block-banner-1 {
+  background-image: url(../HTML/img/banner-01.jpg);
+}
+
+.block-banner-2 {
+  background-image: url(../HTML/img/banner-02.jpg);
+}
+
+.block-banner-3 {
+  background-image: url(../HTML/img/banner-03.jpg);
+}
+
+.banner-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  padding: 34px 38px;
+}
+
+.block-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 34px 38px;
+  cursor: pointer;
+}
+
+.block-title {
+  font-family: 'Pretendard-B';
+  font-size: 28px;
+  padding-bottom: 8px;
+}
+
+.block-subtitle {
+  font-family: 'Pretendard-R';
+  font-size: 14px;
+}
+
+.product {
+  padding: 23px 0 140px 0;
+}
+
+.product-containor {
+  margin: 0 262.5px;
+  padding: 0 15px;
+}
+
+.product-title {
+  padding: 0 0 10px 0;
+}
+
+.product-title-text {
+  color: rgb(34, 34, 34);
+  font-family: 'Pretendard-EB';
+  font-size: 36px;
+}
+
+.product-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 52px 0;
+}
+
+.product-menu-left {
+  margin: 10px 0;
+}
+
+.product-menu-active, .product-menu-item {
+  margin: 5px 32px 5px 0;
+}
+
+.product-menu-active {
+  font-family: 'Pretendard-R';
+  font-size: 15px;
+  color: rgb(51,51,51);
+  border-bottom: 1px solid rgb(121, 121, 121);
+}
+
+.product-menu-item {
+  font-family: 'Pretendard-L';
+  font-size: 15px;
+  color: rgb(136, 136, 136);
+}
+
+.product-menu-right {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.product-menu-right img {
+  width: 15px;
+  height: 15px;
+  
+}
+
+.product-menu-filter, .product-menu-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4px 8px 4px 0;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 3px;
+  width: 92px;
+  height: 38px;
+}
+
+.product-menu-filter-text, .product-menu-search-text {
+  font-family: 'Pretendard-L';
+  font-size: 15px;
+  color: rgb(51,51,51);
+}
+
+.produc-item {
+  display: flex;
+  align-items: center;
+  padding: 0 0 52px 0;
+}
+
+.product-row {
+  position: relative;
+  margin: 0 -15px;
+}
+
+.product-row-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-item-block {
+  padding: 0 15px 35px 15px;
+}
+
+.product-item-image img {
+  width: 315px;
+  height: 390.06px;
+  padding: 0 0 6px 0;
+}
+
+.product-item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-first {
+  display: flex;
+  width: 315px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-item-title {
+  font-family: 'Pretendard-L';
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(153, 153, 153);
+  padding: 0 0 6px 0;
+}
+
+.product-item-wishlist img {
+  width: 19px;
+}
+
+.product-item-subtitle {
+  font-family: 'Pretendard-L';
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(102, 102, 102);
+}
+
+.loadmore-containor {
+  display: flex;
+  padding: 45px 0 0 0;
+  width: 1350px;
+}
+
+.loadmore {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 12px 35px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: 'Pretendard-M';
+}
+
+footer {
+  background-color: rgb(34,34,34);
+  padding: 75px 0 32px 0;
+}
+
+.footer-containor {
+  margin: 0 262.5px;
+  padding: 0 15px;
+}
+
+.footer-menu {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-block {
+  padding: 0 15px 50px 15px;
+}
+
+.footer-block-title {
+  color: white;
+  padding: 0 0 30px 0;
+  font-family: 'Pretendard-B';
+  font-size: 15px;
+}
+
+.footer
