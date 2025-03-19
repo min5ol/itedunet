@@ -215,29 +215,19 @@
   display: block;
   width: 428px;
   height: 289px;
-  background-size: cover;
-  position: relative;
   border: 1px solid rgb(230, 230, 230)
 }
 
-.block-banner-1 {
-  background-image: url(../HTML/img/banner-01.jpg);
-}
-
-.block-banner-2 {
-  background-image: url(../HTML/img/banner-02.jpg);
-}
-
-.block-banner-3 {
-  background-image: url(../HTML/img/banner-03.jpg);
+.banner-link img {
+  width: 426px;
+  height: 287px;
 }
 
 .banner-link {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
-  padding: 34px 38px;
+  position: relative;
 }
 
 .block-text {
@@ -245,7 +235,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 34px 38px;
+  position: absolute;
+  padding: 40px 35px;
   cursor: pointer;
 }
 
