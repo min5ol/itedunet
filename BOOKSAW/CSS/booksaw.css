@@ -1,3 +1,5 @@
+/* 헤더 영역역 */
+
 header {
   width: 100vw;
   background-color: #F3F2EC;
@@ -84,6 +86,8 @@ header {
   font-size: .83vw;
 }
 
+/* 첫번째 섹션 id:billboard */
+
 #billboard {
   width: 100vw;
   background-color: #F3F2EC;
@@ -108,6 +112,7 @@ header {
 }
 
 .slide-billboard {
+  position: relative;
   display: flex;
   justify-content: center;
   position: relative;
@@ -150,6 +155,26 @@ header {
   padding-left: .5vw;
 }
 
+.book-wrap {
+  position: relative;
+}
+
+.shape-image {
+  position: absolute;
+  z-index: 1;
+  width: 23.54vw;
+  height: 29.32vw;
+  top: -4.17vw;
+  left: 3.9vw;
+}
+
+.book-image {
+  position: relative;
+  z-index: 2;
+  width: 20.57vw; 
+  height: 29.79vw;
+}
+
 .billboard-contents button {
   display: block;
   width: 2.5vw;
@@ -164,6 +189,8 @@ header {
   width: 2.5vw;
   height: 2.5vw;
 }
+
+/* 두번째 섹션 id: cliend-holder */
 
 #client-holder {
   width: 100vw;
@@ -188,6 +215,8 @@ header {
 .logo-wrap {
   margin: 0 7.08vw;
 }
+
+/* 세번째 섹션 id: featured-books */
 
 #featured-books {
   width: 100vw;
@@ -289,9 +318,33 @@ figcaption span {
   margin: 0 auto;
 }
 
+.fb-bottom-container {
+  padding: 2.5vw 0;
+}
+
+.fb-bottom {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
 .fb-btn-arrow {
+  display: flex;
+  align-items: center;
   font-family: 'Raleway-M';
   font-size: .83vw;
   line-height: 1.67vw;
 }
+
+.fb-btn-arrow img {
+  width: 1.34vw;
+  height: 1vw;
+}
+
+.product-style {
+  background-color: #EFEEE8;
+  border: .05vw solid #EAE8DF;
+}
+
+/* 네번째 섹션  */
 

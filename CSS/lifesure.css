@@ -1,0 +1,178 @@
+.first-container {
+  background-color: #f2f5f9;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.67vw 13.34vw;
+}
+
+.first img {
+  width: .87vw;
+  height: .87vw;
+}
+
+.second-container {
+  background-color: white;
+}
+
+.second {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.67vw 13.34vw;
+}
+
+.call img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.first-left {
+  display: flex;
+}
+
+.location, .email {
+  display: flex;
+  align-items: center;
+  padding-right: .83vw;
+}
+
+.first-left a {
+  font-family: 'Pretendard-R';
+  color: #6c81b1;
+  margin-left: .5vw;
+}
+
+.location a {
+  padding-right: .6vw;
+  border-right: .14vw solid #015fc9;
+}
+
+.first-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  display: flex;
+  padding-right: .5vw;
+  align-items: center;
+}
+
+.icon a {
+  padding: 0 .5vw;
+}
+
+.icon a:nth-child(4) {
+  padding-right: .6vw;
+  border-right: .14vw solid #015fc9;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-lang {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn-lang {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f5f9;
+  border: none;
+  padding: .53vw 1.07vw;
+  cursor: pointer;
+  font-family: 'Pretendard-R';
+  color: #6c81b1;
+}
+
+.dropdown-content-language {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 5.34vw;
+  box-shadow: 0 .53vw 1.07vw rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.dropdown-content-language a {
+  color: #333;
+  padding: .53vw 1.07vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-language a:hover {
+  background-color: #eee;
+}
+
+.dropdown-lang:hover .dropdown-content-language {
+  display: block;
+}
+
+.BrandLogo {
+  display: flex;
+  align-items: center;
+}
+
+.BrandLogo span {
+  font-family: 'Pretendard-B';
+  font-size: 1.87vw;
+  color: #015fc9;;
+  padding-left: 0.5vw;
+}
+
+.dropdown-pages {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn-pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'Pretendard-R';
+  color: #6c81b1;
+}
+
+.dropdown-content-pages {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 5.34vw;
+  box-shadow: 0 .53vw 1.07vw rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.dropdown-content-pages a {
+  color: #333;
+  padding: .53vw 1.07vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-pages a:hover {
+  background-color: #eee;
+}
+
+.dropdown-pages:hover .dropdown-content-pages {
+  display: block;
+}
+
+.dropbtn-pages img {
+  width: 1vw;
+  height: 1vw;
+}
+
+.menu-bar nav ul {
+  display: flex;
+  flex-direction: row;
+}
