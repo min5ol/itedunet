@@ -20,6 +20,7 @@
 .second {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.67vw 13.34vw;
 }
 
@@ -40,7 +41,8 @@
 
 .first-left a {
   font-family: 'Pretendard-R';
-  color: #6c81b1;
+  font-size: 0.97vw;
+  color: black;
   margin-left: .5vw;
 }
 
@@ -85,7 +87,7 @@
   align-items: center;
   background-color: #f2f5f9;
   border: none;
-  padding: .53vw 1.07vw;
+  padding: .53vw 0 .53vw 1.07vw;
   cursor: pointer;
   font-family: 'Pretendard-R';
   color: #6c81b1;
@@ -136,10 +138,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
+  background-color: #f2f5f9;
   border: none;
   cursor: pointer;
   font-family: 'Pretendard-R';
+  font-size: 0.97vw;
   color: #6c81b1;
 }
 
@@ -172,7 +175,89 @@
   height: 1vw;
 }
 
+.menu-bar {
+  display: block;
+  background-color: #f2f5f9;
+  padding: .5vw;
+  border-radius: .5vw;
+}
+
+.menu-bar nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu-bar nav ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.menu-bar nav ul li {
+  font-family: 'Pretendard-R';
+  font-size: 0.97vw;
+  color: #6c81b1;
+  padding: 0 1vw;
+}
+
+.menu-bar-icon {
+  display: flex;
+
+}
+
+.menu-bar-icon a {
+  margin: 0 .2vw;
+}
+
+.menu-bar-icon a:nth-child(1) {
+  display: block;
+  width: 1.8vw;
+  background-color: #015fc9;
+  padding: .3vw;
+  border-radius: .9vw;
+}
+
+.menu-bar-icon a:nth-child(2) {
+  display: block;
+  background-color: #015fc9;
+  color: white;
+  font-family: 'Pretendard-R';
+  font-size: 0.97vw;
+  padding: .2vw;
+  text-align: center;
+  line-height: 1.3vw;
+  border-radius: 1vw;
+}
+
+.menu-bar-icon a img {
+  width: 1.1vw;
+}
+
+
+.call {
+  display: flex;
+  align-items: center;
+}
+
+.call a {
+  display: block;
+  background-color: #f2f5f9;
+  border-radius: 1.5vw;
+  padding: .5vw;
+  margin-right: .3vw;
+}
+
+.call a img {
+  width: 1.86vw;
+}
+
+.call-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.call-info span {
+  font-family: 'Pretendard-R';
+  font-size: 0.8vw;
+  color: #6c81b1;
 }
