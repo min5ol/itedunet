@@ -170,7 +170,7 @@ header {
 
 /* 슬라이드 구현하기 */
 
-input {
+.slider input {
   display: none;
 }
 
@@ -197,4 +197,142 @@ input {
 }
 #slide3:checked ~ .slides {
   transform: translateX(-200vw);
+}
+
+
+/* 탭 메뉴 */
+
+.Menu input {
+  display: none;
+}
+
+.all {
+  display: none;
+}
+
+.Menu {
+  padding: 30px 15px;
+  margin: 0 367.5px;
+}
+
+.Menu-title {
+  font-family: 'Dancing-M';
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.tab-menu {
+  display: flex;
+  margin: 0 10px;
+  justify-content: center;
+}
+
+.tab-menu label {
+  padding: 7px 25px;
+  font-family: 'Open-R';
+  font-size: 16px;
+  color: Black;
+  background-color: white;
+  border-radius: 25px;
+}
+
+#All:checked ~ .tab-container .tab-contents .tab1,
+#Burger:checked ~ .tab-container .tab-contents .tab2,
+#Pizza:checked ~ .tab-container .tab-contents .tab3,
+#Pasta:checked ~ .tab-container .tab-contents .tab4,
+#Fries:checked ~ .tab-container .tab-contents .tab5 {
+  display: block;
+}
+
+#All:checked ~ .tab-container .tab-menu .tab1,
+#Burger:checked ~ .tab-container .tab-menu .tab2,
+#Pizza:checked ~ .tab-container .tab-menu .tab3,
+#Pasta:checked ~ .tab-container .tab-menu .tab4,
+#Fries:checked ~ .tab-container .tab-menu .tab5 {
+  background-color: #222831;
+  color: white;
+}
+
+.menu-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  padding: 0 15px;
+  width: 360px;
+}
+
+.box {
+  margin-top: 25px;
+}
+
+.card-bg {
+  background-color: #262c33;
+  border-radius: 20px;
+}
+
+.img-box {
+  display: flex;
+  padding: 25px;
+  margin: -1px;
+  background-color: #f1f2f3;
+  align-items: center;
+  height: 215px;
+  border-radius: 20px 20px 0 45px;
+}
+
+.img-box img {
+  max-width: 100%;
+  max-height: 145px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.detail-box {
+  padding: 25px;
+}
+
+.menu-title {
+  font-family: 'Open-B';
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.menu-subtitle {
+  font-family: 'Open-R';
+  font-size: 16px;
+  color: white;
+}
+
+.option {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option p {
+  font-family: 'Open-M';
+  font-size: 16px;
+  color: white;
+}
+
+.option a {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffbe33;
+  border-radius: 100%;
+}
+
+.option a img {
+  width: 18px;
+}
+
+.menu-card:hover .img-box img {
+  transform: scale(1.1);
 }
