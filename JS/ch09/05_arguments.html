@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arguments</title>
+  <script>
+    function add() {
+      let len = arguments.length;
+      if (len < 2) {
+        // document.write("2개 이상의 숫자를 입력하세요. <br>");
+        return "2개 이상의 숫자를 입력하세요.";
+      }
+      else {
+        let sum = 0;
+        for(let idx in arguments){
+          sum = sum + arguments[idx];
+        }
+      return sum;
+      }
+    }
+
+    document.write(`add()의 결과 : ${add()} <br>`);
+    document.write(`add(100)의 결과 : ${add(100)} <br>`);
+    document.write(`add(100,200)의 결과 : ${add(100,200)} <br>`);
+    document.write(`add(100,200,300,400,50)의 결과 : ${add(100,200,300,400,50)} <br>`);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

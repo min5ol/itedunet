@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열,객체 매개변수</title>
+  <script>
+    function showMe(a,b) {
+      document.write(`${a[0]}가 ${a[1]}개 있습니다.<br>`);
+      document.write(`나는 ${b.car}를 타고, 색상이 ${b.color}이다.<br>`);
+    }
+
+    let array = ["사과",10];
+    let obj = {"car":"BMW","color":"black"};
+    showMe(array,obj);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
