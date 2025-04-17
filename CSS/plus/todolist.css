@@ -1,0 +1,83 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.title {
+  font-family: 'AppleSDGothicNeoSB';
+  font-size: 32px;
+  text-align: center;
+}
+
+#todo-input {
+  padding: 40px;
+  background-color: lightblue;
+  display: flex;
+}
+
+#todo-input input {
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  font-family: 'AppleSDGothicNeoM';
+  font-size: 16px;
+  margin-right: 10px;
+  
+}
+
+#todo-input button {
+  width: 60px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  font-family: 'AppleSDGothicNeoR';
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#todo-input button:hover {
+  background-color: #6e8eb8;
+}
+
+#todo-output {
+  border: dashed 4px lightpink;
+  height: 500px;
+}
+
+.item.even {
+  font-family: 'AppleSDGothicNeoM';
+  font-size: 24px;
+  padding: 5px 20px 5px 20px;
+  background-color: rgba(201, 201, 201, 0.3);
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.item.even:hover {
+  background-color: rgba(201, 201, 201, 0.8);
+}
+
+.item.odd {
+  font-family: 'AppleSDGothicNeoM';
+  font-size: 24px;
+  padding: 5px 20px 5px 20px;
+  background-color: rgba(181, 181, 181, 0.5);
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.item.odd:hover {
+  background-color: rgba(181, 181, 181, 1);
+}
+
+.delete-btn {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}

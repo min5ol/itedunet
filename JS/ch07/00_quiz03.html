@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quiz 03</title>
+  <script>
+    var money = 500;
+    var tofumoney = 300;
+    var tofu = parseInt(prompt("두부의 개수는?"));
+
+    if (money-(tofu * tofumoney) >= 0) {
+      document.write(`두부를 ${tofu}개 샀고, 잔돈 ${money-(tofu * tofumoney)}원 남았어.`);
+    }
+    else {
+      document.write(`돈이 부족해서 두부를 못 샀어.`);
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

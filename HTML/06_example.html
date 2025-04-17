@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coza Stroe Clone</title>
+  <link rel="stylesheet" href="../CSS/Fonts.css">
+</head>
+
+<style>
+  body {
+    width: 1920px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  header {
+    background-color: #222222;
+    width: 1340px;
+    height: 40px;
+    padding: 0 290px 0 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .h-light {
+    font-family: 'Pretendard-M';
+    font-size: 14px;
+    color: #ADADAE;
+    line-height: 10px;
+    margin-top: 14px;
+  }
+
+  nav {
+    padding-top: 6px;
+  }
+
+  nav a {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    text-align: center;
+  }
+
+  .h-menu {
+    display: inline-block;
+    margin-top: 6px;
+    font-family: 'Pretendard-R';
+    color: #ADADAE;
+    font-size: 14px;
+    line-height: 10px;
+  }
+
+  .slides {
+    width: 1920px;
+    height: 930px;
+    object-fit: fill;
+    background-image: url(./img/slide-02.jpg);
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .BrandLogo {
+    display: inline-block;
+    margin: 30px 0 0 290px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Pretendard-M';
+    font-size: 24px;
+  }
+
+  .slide-menu {
+    display: inline-block;
+    margin: 30px 0 0 70px;
+  }
+
+  .active-menu {
+    color: #6D7BE0;
+  }
+
+  .menu {
+    color: black;
+  }
+
+  .menu,
+  .active-menu {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    font-family: 'Pretendard-R';
+    font-size: 16px;
+  }
+
+  .slide-icon {
+    margin: 30px 0 0 595px;
+  }
+
+  .slide-icon a {
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+  }
+
+  .slide-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .SC-top {
+    font-family: 'Pretendard-M';
+    font-size: 32px;
+    margin: 350px 0 0 290px;
+  }
+
+  .SC-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 58px;
+    margin: 30px 0 0 290px;
+  }
+
+  .buy {
+    width: 150px;
+    height: 10px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Pretendard-M';
+    padding: 16px 15px 24px 15px;
+    background-color: #717FE0;
+    border-radius: 50px;
+    margin: 30px 0 0 290px
+  }
+
+  .Banner {
+    width: 1920;
+    height: auto;
+    padding: 50px 320px 80px 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Banner-1,
+  .Banner-2,
+  .Banner-3 {
+    display: inline-block;
+    width: 396px;
+    height: 266.97px;
+    background-size: cover;
+    border: 1px solid lightgray;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .Banner-1 {
+    background-image: url(./img/banner-01.png);
+  }
+
+  .Banner-2 {
+    background-image: url(./img/banner-02.jpg);
+  }
+
+  .Banner-3 {
+    background-image: url(./img/banner-03.jpg);
+  }
+
+  .B-title {
+    display: block;
+    color: black;
+    margin: 40px 0 0 40px;
+    font-family: 'Pretendard-B';
+    font-size: 28px;
+  }
+
+  .B-sub {
+    display: block;
+    color: gray;
+    margin: 5px 0 0 40px;
+    font-family: 'Pretendard-L';
+    font-size: 14px;
+  }
+
+  .Item-title {
+    font-family: 'Pretendard-EB';
+    font-size: 36px;
+    margin-left: 320px;
+  }
+
+  .Item-menu {
+    padding: 0 320px 100px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Item-nav {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
+  .active-item,
+  .item {
+    display: inline-block;
+    font-family: 'Pretendard-L';
+    font-size: 16px;
+  }
+
+  .active-item {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .item {
+    color: darkgray;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter img,
+  .search img {
+    width: 18px;
+    height: auto;
+  }
+
+  .filter,
+  .search {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 320px 15px 320px;
+    justify-content: space-between;
+  }
+
+  .p-item {
+    width: 270px;
+  }
+
+  .p-item img {
+    width: 270px;
+    height: 334.34px;
+  }
+
+  .p-title {
+    width: 270px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .p-title img {
+    width: 20px;
+  }
+
+  .p-name {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: #c2c2c2;
+    font-family: 'Pretendard-EL';
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .p-sub {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: darkslategray;
+  }
+
+  .p-footer {
+    justify-content: center;
+    width: 180px;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+  }
+
+  .p-btn {
+    display: block;
+    text-align: center;
+    padding: 15px 40px 15px 40px;
+    font-family: 'Pretendard-M';
+    font-size: 16px;
+    color: Black;
+    background-color: lightgray;
+    text-decoration: none;
+    border-radius: 30px;
+  }
+
+  footer {
+    width: 1280px;
+    height: 360px;
+    background-color: black;
+    padding: 100px 320px 40px 320px;
+  }
+
+  .f-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .f-title {
+    font-family: 'Pretendard-EB';
+    font-size: 18px;
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  .f-sub {
+    display: block;
+    font-family: 'Pretendard-L';
+    font-size: 16px;
+    color: #ADADAE;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+
+  .hr {
+    width: 312.25px;
+    height: 2px;
+    background-color: #ADADAE;
+  }
+
+  .sub {
+    display: block;
+    width: 179px;
+    text-decoration: none;
+    font-family: 'Pretendard-M';
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 10px 15px 10px;
+    background-color: #717fe0;
+    ;
+    border-radius: 30px;
+  }
+
+  .creditcard {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .creditcard img {
+    margin: 0 3px 0 3px;
+  }
+
+  .f-copy {
+    display: inline-block;
+    color: #888;
+    font-family: 'Pretendard-L';
+    font-size: 14px;
+  }
+
+  .f-link {
+    display: inline-block;
+    color: #007bff;
+    font-family: 'Pretendard-L';
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="h-light">Free shipping for standard order over $100</div>
+    <nav>
+      <a href="#" class="h-menu">Help & FAQs</a>
+      <a href="#" class="h-menu">My Account</a>
+      <a href="#" class="h-menu">EN</a>
+      <a href="#" class="h-menu">USD</a>
+    </nav>
+  </header>
+
+  <section class="slides">
+    <div class="slide">
+      <a href="#" class="BrandLogo"><b>COZA</b> STORE</a>
+      <div class="slide-menu">
+        <a href="#" class="active-menu">Home</a>
+        <a href="#" class="menu">Features</a>
+        <a href="#" class="menu">Blog</a>
+        <a href="#" class="menu">About</a>
+        <a href="#" class="menu">Contact</a>
+      </div>
+      <div class="slide-icon">
+        <a href="#">
+          <img src="./img/search-logo.svg">
+        </a>
+        <a href="#">
+          <img src="./img/shopping-logo.svg">
+        </a>
+        <a href="#">
+          <img src="./img/heart.svg">
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <div class="Slide-Contents">
+      <div class="SC-top">Men New-Season</div>
+      <div class="SC-title">JACKETS & COATS</div>
+      <a href="#" class="buy">SHOP NOW</a>
+    </div>
+  </section>
+  <section class="Banner">
+    <a href="#" class="Banner-1">
+      <div class="B-title">Women</div>
+      <div class="B-sub">Spring 2018</div>
+    </a>
+    <a href="#" class="Banner-2">
+      <div class="B-title">Men</div>
+      <div class="B-sub">Spring 2018</div>
+    </a>
+    <a href="#" class="Banner-3">
+      <div class="B-title">Accessories</div>
+      <div class="B-sub">New Trend</div>
+    </a>
+  </section>
+
+  <section class="Item">
+    <div class="Item-title">PRODUCT OVERVIEW</div>
+    <div class="Item-menu">
+      <nav class="Item-nav">
+        <a href="#" class="active-item">All Products</a>
+        <a href="#" class="item">Women</a>
+        <a href="#" class="item">Men</a>
+        <a href="#" class="item">Bag</a>
+        <a href="#" class="item">Shoes</a>
+        <a href="#" class="item">Watches</a>
+      </nav>
+      <div class="btn">
+        <a class="filter">
+          <img src="./img/filter.svg">
+          &nbsp;&nbsp;&nbsp;&nbsp;Fillter
+        </a>
+        <a class="search">
+          <img src="./img/search-logo.svg">
+          &nbsp;&nbsp;&nbsp;&nbsp;Search
+        </a>
+      </div>
+    </div>
+
+    <div class="Products">
+      <div class="product">
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-01.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Esprit Ruffle Shirt</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$16.64</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-02.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Herschel supply</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$35.31</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-03.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Only Check Trouser</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$25.50</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-04.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Classic Trench Coat</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$75.00</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-05.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Front Pocket Jumper</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$34.75</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-06.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Vintage Inspired Classic</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$93.20</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-07.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Shirt in Stretch Cotton</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$52.66</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-08.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Pieces Metallic Printed</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$18.96</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-09.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Converse All Star Hi Pilmsolls</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$75.00</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-10.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Femme T-Shirt In Stripe</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$25.85</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-11.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Herschel supply</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$63.16</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-12.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Herschel supply</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$63.15</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-13.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">T-Shirt with Sleeve</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$18.49</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-14.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Pretty Little Thing</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$54.79</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-15.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Mini Silver Mesh Watch</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$86.85</div>
+        </div>
+        <div class="p-item">
+          <a href="#">
+            <img src="./img/product-16.jpg">
+          </a>
+          <div class="p-title">
+            <a href="#" class="p-name">Square Neck Back</a>
+            <img src="./img/heart_c2c2c2.svg">
+          </div>
+          <div class="p-sub">$29.64</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="p-footer">
+      <a href="#" class="p-btn">LOAD MORE</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="f-category">
+
+      <div class="f-menu">
+        <div class="f-title">CATEGORIES</div>
+        <a href="#" class="f-sub">Women</a>
+        <a href="#" class="f-sub">men</a>
+        <a href="#" class="f-sub">Shoes</a>
+        <a href="#" class="f-sub">Watches</a>
+      </div>
+
+      <div class="f-menu">
+        <div class="f-title">HELP</div>
+        <a href="#" class="f-sub">Track Order</a>
+        <a href="#" class="f-sub">Returns</a>
+        <a href="#" class="f-sub">Shoes</a>
+        <a href="#" class="f-sub">Shipping</a>
+      </div>
+
+      <div class="f-menu">
+        <div class="f-title">GET IN TOUCH</div>
+        <a href="#" class="f-sub">Any questions? Let us know in store at 8th<br>floor, 379 Hudson St, New York, NY 10018
+          or<br>call us on (+1)96 716 6879</a>
+      </div>
+
+      <div class="f-menu">
+        <div class="f-title">NEWSLETTER</div>
+        <a href="#" class="f-sub">email@example.com</a>
+        <div class="hr"></div>
+        <a href="#" class="sub">SUBCRIBE</a>
+      </div>
+
+    </div>
+
+    <div class="creditcard">
+      <img src="./img/icon-pay-01.png">
+      <img src="./img/icon-pay-02.png">
+      <img src="./img/icon-pay-03.png">
+      <img src="./img/icon-pay-04.png">
+      <img src="./img/icon-pay-05.png">
+    </div>
+
+    <div class="copyright">
+      <div class="f-copy">Copyright &copy;2025 All rights reserved | Made with ♡ by&nbsp;</div>
+      <a href="#" class="f-link">Colorlib </a>
+      <div class="f-copy">&nbsp;& distributed by&nbsp;</div>
+      <a href="#" class="f-link">ThemeWagon</a>
+    </div>
+  </footer>
+</body>
+
+</html>

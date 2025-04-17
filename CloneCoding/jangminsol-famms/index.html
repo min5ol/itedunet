@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/Fonts.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>famms-min5ol</title>
+  <script src="./js/famms.js" defer></script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <header>
+    <div class="header-container">
+      <div class="top-line">
+        <a href="./index.html" class="logo"><img src="./img/logo.png" alt="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="#" class="top-active-menu">HOME</a></li>
+            <li>
+              <div class="top-dropdown">
+                <button class="top-dropbtn">PAGES<img src="./img/triangle-black.svg" alt="page-down"></button>
+                <div class="top-dropdown-content">
+                  <a href="#">HOME</a>
+                  <a href="#">PRODUCTS</a>
+                  <a href="#">WHY</a>
+                  <a href="#">SUBSCRIBE</a>
+                  <a href="#">CUSTOMER</a>
+                  <a href="#">CONTACT</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#" class="top-menu">PRODUCTS</a></li>
+            <li><a href="#" class="top-menu">BLOG</a></li>
+            <li><a href="#" class="top-menu">CONTACT</a></li>
+            <a href="#" class="cart"><img src="./img/cart-black.svg" alt="cart"></a>
+            <a href="#" class="search"><img src="./img/search-black.svg" alt="search"></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ✅ HTML - 무한 슬라이더 구조 -->
+  <section id="slider">
+    <div class="slides">
+      <!-- 마지막 슬라이드 복제 (맨 앞에) -->
+      <div class="slide">
+        <h2 class="slide-title-color">Sale 20% Off</h2>
+        <h2 class="slide-title">On Everything</h2>
+        <p>Explicabo esse amet tempora quibusdam laudantium, laborum<br>eaque magnam fugiat hic? Esse dicta aliquid
+          error repudiandae<br>earum suscipit fugiat molestias, veniam, vel architecto veritatis<br>delectus repellat
+          modi
+          impedit sequi.</p>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+
+      <!-- 실제 슬라이드들 -->
+      <div class="slide">
+        <h2 class="slide-title-color">Sale 20% Off</h2>
+        <h2 class="slide-title">On Everything</h2>
+        <p>Explicabo esse amet tempora quibusdam laudantium, laborum<br>eaque magnam fugiat hic? Esse dicta aliquid
+          error repudiandae<br>earum suscipit fugiat molestias, veniam, vel architecto veritatis<br>delectus repellat
+          modi
+          impedit sequi.</p>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+      <div class="slide">
+        <h2 class="slide-title-color">Sale 20% Off</h2>
+        <h2 class="slide-title">On Everything</h2>
+        <p>Explicabo esse amet tempora quibusdam laudantium, laborum<br>eaque magnam fugiat hic? Esse dicta aliquid
+          error repudiandae<br>earum suscipit fugiat molestias, veniam, vel architecto veritatis<br>delectus repellat
+          modi
+          impedit sequi.</p>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+      <div class="slide">
+        <h2 class="slide-title-color">Sale 20% Off</h2>
+        <h2 class="slide-title">On Everything</h2>
+        <p>Explicabo esse amet tempora quibusdam laudantium, laborum<br>eaque magnam fugiat hic? Esse dicta aliquid
+          error repudiandae<br>earum suscipit fugiat molestias, veniam, vel architecto veritatis<br>delectus repellat
+          modi
+          impedit sequi.</p>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+
+      <!-- 첫 번째 슬라이드 복제 (맨 뒤에) -->
+      <div class="slide">
+        <h2 class="slide-title-color">Sale 20% Off</h2>
+        <h2 class="slide-title">On Everything</h2>
+        <p>Explicabo esse amet tempora quibusdam laudantium, laborum<br>eaque magnam fugiat hic? Esse dicta aliquid
+          error repudiandae<br>earum suscipit fugiat molestias, veniam, vel architecto veritatis<br>delectus repellat
+          modi
+          impedit sequi.</p>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- 인디케이터 버튼 -->
+    <div class="navigation">
+      <button class="dot active" data-index="0"></button>
+      <button class="dot" data-index="1"></button>
+      <button class="dot" data-index="2"></button>
+    </div>
+  </section>
+
+  <!-- Why Shop With Us 영역 -->
+  <section id="why">
+    <div class="why-container">
+      <div class="why-flex">
+        <p>Why Shop With Us</p>
+        <div class="hr"></div>
+      </div>
+      <div class="why-cards">
+        <div class="why-card">
+          <div><img src="./img/delivery-white.svg" alt="delivery"></div>
+          <p class="why-card-title">Fast Delivery</p>
+          <p class="why-card-subtitle">variations of passages of Lorem</p>
+          <p class="why-card-subtitle">Ipsum available</p>
+        </div>
+        <div class="why-card">
+          <div><img src="./img/free-white.svg" alt="shipping"></div>
+          <p class="why-card-title">Free Shipping</p>
+          <p class="why-card-subtitle">variations of passages of Lorem</p>
+          <p class="why-card-subtitle">Ipsum available</p>
+        </div>
+        <div class="why-card">
+          <div><img src="./img/medal-white.svg" alt="quality"></div>
+          <p class="why-card-title">Best Quality</p>
+          <p class="why-card-subtitle">variations of passages of Lorem</p>
+          <p class="why-card-subtitle">Ipsum available</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrival 영역 -->
+  <section id="arrival">
+    <div class="arrival-flex">
+      <p class="arrival-title">#NewArrivals</p>
+      <p class="arrival-subtitle">Vitae fugiat laboriosam officia perferendis provident aliquid</p>
+      <p class="arrival-subtitle">voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic?</p>
+      <p class="arrival-subtitle">Tenetur commodi, nisi ren vel, ea eaque ab ipsa, autem</p>
+      <p class="arrival-subtitle">similque ex unde!</p>
+      <a href="#" class="shop-btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products 영역 -->
+  <section id="products">
+    <div class="products-container">
+      <div class="products-flex">
+        <div class="products-title">
+          <span>Our </span>
+          <span>products</span>
+        </div>
+        <div class="hr"></div>
+        <div class="products-items">
+          <div class="product-item">
+            <img src="./img/p1.png">
+            <div class="item-text">
+              <span>Men's Shirt</span>
+              <span>$75</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p2.png">
+            <div class="item-text">
+              <span>Men's Shirt</span>
+              <span>$80</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p3.png">
+            <div class="item-text">
+              <span>Women's Dress</span>
+              <span>$68</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p4.png">
+            <div class="item-text">
+              <span>Women's Dress</span>
+              <span>$70</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p5.png">
+            <div class="item-text">
+              <span>Women's Dress</span>
+              <span>$75</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p6.png">
+            <div class="item-text">
+              <span>Women's Dress</span>
+              <span>$58</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p7.png">
+            <div class="item-text">
+              <span>Women's Dress</span>
+              <span>$80</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p8.png">
+            <div class="item-text">
+              <span>Men's Shirt</span>
+              <span>$65</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p9.png">
+            <div class="item-text">
+              <span>Men's Shirt</span>
+              <span>$65</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p10.png">
+            <div class="item-text">
+              <span>Men's Shirt</span>
+              <span>$65</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p11.png">
+            <div class="item-text">
+              <span>Men's Shirt</span>
+              <span>$65</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="./img/p12.png">
+            <div class="item-text">
+              <span>Women's Dress</span>
+              <span>$65</span>
+            </div>
+
+            <div class="product-buttons">
+              <button class="btn add-cart-btn">Add To Cart</button>
+              <button class="btn buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="view-btn">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 구독 영역 -->
+  <section id="subscribe">
+    <div class="subscribe-container">
+      <div class="subscribe-flex">
+        <p>Subscribe To Get Discount Offers</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <input type="text" placeholder="Enter Your Email" class="subscribe-input">
+        <input type="submit" value="SUBSCRIBE" class="subscribe-submit">
+      </div>
+    </div>
+  </section>
+
+  <!-- 고객 영역 -->
+  <section id="customer">
+    <div class="customer-container">
+      <div class="customer-flex">
+        <p>Customer's Testimonial</p>
+        <div class="hr"></div>
+        <div class="customer-items">
+          <button class="customer-btn"><img src="./img/arrow-left-white.svg"></button>
+          <div class="customer-item">
+            <img src="./img/client.jpg">
+            <p class="customer-name">Anna Trevor</p>
+            <p class="customer-title">customer</p>
+            <p class="customer-subtitle">Dignissimos reprehenderit repellendus nobis error quibusdam? Atque animi sint
+              unde quis reprehenderit, et,</>
+            <p class="customer-subtitle">perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore
+              modi voluptatibus accusantium</p>
+            <p class="customer-subtitle">sapiente nam! Quaerat.</p>
+          </div>
+          <button class="customer-btn"><img src="./img/arrow-right-white.svg"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 영역 -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contents">
+        <div class="footer-content-1">
+          <img src="./img/logo.png">
+          <div class="f-info">
+            <span class="f-1-title">ADDRESS:</span>
+            <span class="f-1-subtitle">28 White tower, Street Name New<br>York City, USA</span>
+          </div>
+          <div class="f-info">
+            <span class="f-1-title">TELEPHONE:</span>
+            <span class="f-1-subtitle">+91 987 654 3210</span>
+          </div>
+          <div class="f-info">
+            <span class="f-1-title">EMAIL:</span>
+            <span class="f-1-subtitle">yourmain@gmail.com</span>
+          </div>
+        </div>
+        <div class="footer-content-2">
+          <p>MENU</p>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-content-2">
+          <p>ACCOUNT</p>
+          <nav>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Checkout</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Shopping</a></li>
+              <li><a href="#">Widget</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-content-3">
+          <p>NEWSLETTER</p>
+          <p>Subscribe by our newsletter and get</p>
+          <p>update protidin.</p>
+          <div class="f-input">
+            <input type="text" placeholder="Enter Your Mail" class="f-input-text">
+            <input type="submit" value="Subscribe" class="f-input-submit">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 저작권 표시 영역 -->
+  <section id="copy">
+    <div class="copy-container">
+      <div class="copy-text">
+        <p>&copy; 2021 All Rights Reseved By<a href="#">&nbsp;Free Html Templates</a></p>
+        <p>Distributed By<a href="#">&nbsp;ThemeWagon</a></p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

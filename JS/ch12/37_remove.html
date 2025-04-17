@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>노드 제거</title>
+</head>
+<body>
+  <div id="div1">
+    <p id="p1">this is a paragraph</p>
+    <p id="p2">this is another paragraph</p>
+  </div>
+  <script>
+    var para = document.querySelector("#div1");
+    var node = document.querySelector("#p1");
+    para.removeChild(node);
+
+    // para.innerHTML = `<p id="p2">this is another paragraph</p>`;
+
+    console.log(para.nodeValue);
+    console.log(para.children[0].childNodes[0].nodeValue);
+  </script>
+</body>
+</html>

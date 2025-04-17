@@ -1,0 +1,29 @@
+body {
+  margin: 10%;
+}
+
+label {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px 0;
+  background-color: lightpink;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #808080;
+  display: none;
+  width: 300px;
+  height: 100px;
+}
+
+input[type="checkbox"]:checked ~ .description {
+  display: block;
+}
+
+input[type="checkbox"] {
+  display: none;
+}

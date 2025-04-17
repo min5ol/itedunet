@@ -1,0 +1,350 @@
+/* 헤더 영역역 */
+
+header {
+  width: 100vw;
+  background-color: #F3F2EC;
+}
+
+.header-container, .header-2nd-container {
+  border-bottom: .05vw solid #E0E0E0;
+}
+
+.header-container-column, .header-2nd-column {
+  padding: .78vw 0;
+}
+
+.header-container-row, .header-2nd-row {
+  padding: 0 4.17vw;
+}
+
+.header-top-left ul {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.67vw;
+}
+
+.header-top, .header-2nd-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top ul li {
+  padding: 0 .8vw;
+}
+
+.header-top ul li a img {
+  height: 1vw;
+}
+
+.header-top-right {
+  display: flex;
+}
+
+.header-top-right a {
+  margin-right: 2.08vw;
+}
+
+.header-top-right a:nth-child(3) {
+  margin-right: 0;
+}
+
+.header-top-right img {
+  height: .83vw;
+}
+
+.header-top-right a:nth-child(3) {
+  background-color: #EFEEE8;
+  width: 1.98vw;
+  height: 1.67vw;
+  border-radius: 1.67vw;
+  padding: 0 .52vw;
+}
+
+.header-top-right img:nth-child(3) {
+  height: .94vw;
+}
+
+.header-top-right span {
+  font-family: 'Raleway-R';
+  font-size: 0.83vw;
+  color: #555;
+}
+
+.header-2nd-left img {
+  padding: 0 .8vw;
+}
+
+.header-2nd-right ul {
+  display: flex;
+}
+
+.header-2nd-right ul a {
+  color: #777;
+  padding: .52vw 1.04vw;
+  font-family: 'Raleway-R';
+  font-size: .83vw;
+}
+
+/* 첫번째 섹션 id:billboard */
+
+#billboard {
+  width: 100vw;
+  background-color: #F3F2EC;
+}
+
+.billboard-container {
+  padding: 0 1.25vw;
+  margin: 0 3.8vw;
+}
+
+.billboard-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.billboard-contents {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4.17vw 0;
+  margin-bottom: 1.56vw;
+}
+
+.slide-billboard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-content {
+  margin: 3.13vw 9.11vw 0 0;
+  position: relative;
+}
+
+.banner-title {
+  margin: 1.3vw 0;
+  font-family: 'Prata';
+  font-size: 3.75vw;
+  color: rgb(34, 34, 34);
+}
+
+.banner-content p {
+  margin-bottom: 1.56vw;
+  font-family: 'Raleway-M';
+  font-size: .83vw;
+  color: rgb(117, 117, 117);
+  width: 23.18vw;
+  line-height: 1.6vw;
+  }
+
+.read-more-btn a {
+  width: 8vw;
+  display: flex;
+  align-items: center;
+  border: .05vw solid #C5A992;
+  margin-top: .78vw;
+  padding: .59vw .7vw;
+  color: #C5A992;
+  text-align: center;
+}
+
+.read-more-btn img {
+  height: 1vw;
+  padding-left: .5vw;
+}
+
+.book-wrap {
+  position: relative;
+}
+
+.shape-image {
+  position: absolute;
+  z-index: 1;
+  width: 23.54vw;
+  height: 29.32vw;
+  top: -4.17vw;
+  left: 3.9vw;
+}
+
+.book-image {
+  position: relative;
+  z-index: 2;
+  width: 20.57vw; 
+  height: 29.79vw;
+}
+
+.billboard-contents button {
+  display: block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: rgba(0,0,0,0);
+  align-self: center;
+  border-radius: 5vw;
+  border: .05vw solid rgb(229, 227, 218);
+}
+
+.billboard-contents button img {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+/* 두번째 섹션 id: cliend-holder */
+
+#client-holder {
+  width: 100vw;
+  background-color: rgb(237, 235, 228);
+  padding: 5.47vw 0;
+}
+
+.client-container {
+  margin: 0 15.23vw;
+  padding: 0 1.25vw;
+}
+
+.client-row {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-content {
+  padding: 0 .63vw;
+}
+
+.logo-wrap {
+  margin: 0 7.08vw;
+}
+
+/* 세번째 섹션 id: featured-books */
+
+#featured-books {
+  width: 100vw;
+  background-color: #F3F2EC;
+}
+
+.fb-container {
+  margin: 0 15.23vw;
+  padding: 2.5vw 1.25vw;
+}
+
+.fb-row {
+  display: flex;
+}
+
+.fb-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fb-contents {
+  padding: 0 .63vw;
+}
+
+.fb-top-subtitle {
+  font-family: 'Raleway-R';
+  font-size: .73vw;
+  color: #afafaf;
+  line-height: 1.46vw;
+  text-align: center;
+}
+
+.fb-fb {
+  margin: 1.3vw 0 3.91vw 0;
+  padding: 0 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fb-hr {
+  display: block;
+  width: 16.46vw;
+  height: .1vw;
+  background-color: #E1E1E0;
+}
+
+.fb-top-title {
+  font-family: 'Prata';
+  font-size: 2.5vw;
+  padding: 0 3vw;
+}
+
+.fb-bottom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fb-bottom-contents {
+  padding: 0 .65vw;
+}
+
+.product-style img {
+  border: .05vw solid #EAE8DF;
+  padding: 2.34vw;
+}
+
+figcaption {
+  padding: 1.56vw 0;
+  text-align: center;
+}
+
+figcaption h3 {
+  font-family: 'Prata';
+  font-size: 1.17vw;
+  color: #74642F;
+  line-height: 1.63vw;
+}
+
+figcaption span {
+  font-family: 'Raleway-R';
+  font-size: .83vw;
+  color: #757575;
+  line-height: 1.67vw;
+}
+
+.item-price {
+  font-family: 'Raleway-M';
+  font-size: 1.08vw;
+  color: #74642F;
+  line-height: 2.17vw;
+}
+
+.bt-hr {
+  width: 67.04vw;
+  height: .1vw;
+  background-color: #E1E1E0;
+  margin: 0 auto;
+}
+
+.fb-bottom-container {
+  padding: 2.5vw 0;
+}
+
+.fb-bottom {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.fb-btn-arrow {
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway-M';
+  font-size: .83vw;
+  line-height: 1.67vw;
+}
+
+.fb-btn-arrow img {
+  width: 1.34vw;
+  height: 1vw;
+}
+
+.product-style {
+  background-color: #EFEEE8;
+  border: .05vw solid #EAE8DF;
+}
+
+/* 네번째 섹션  */
+

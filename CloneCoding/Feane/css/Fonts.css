@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Dancing-B';
+  src: url('../fonts/DancingScript-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Dancing-M';
+  src: url('../fonts/DancingScript-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Dancing-R';
+  src: url('../fonts/DancingScript-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Dancing-SB';
+  src: url('../fonts/DancingScript-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Open-B';
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Open-EB';
+  src: url('../fonts/OpenSans-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Open-L';
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Open-M';
+  src: url('../fonts/OpenSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Open-R';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open-SB';
+  src: url('../fonts/OpenSans-SemiBold.ttf');
+}

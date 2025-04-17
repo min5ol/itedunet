@@ -1,0 +1,28 @@
+.main_menu {
+  display: flex;
+}
+
+.main_menu > li {
+  margin-right: 10px;
+  padding: 10px 20px;
+  line-height: 30px;
+  background-color: burlywood;
+}
+
+.main_menu > li:nth-child(2){
+  position: relative;
+}
+
+.sub_menu {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  display: none;
+  background-color: lightblue;
+  padding: 0 28px;
+  line-height: 30px;
+}
+
+.main_menu > li:nth-child(2):hover .sub_menu {
+  display: block;
+}

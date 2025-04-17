@@ -1,0 +1,39 @@
+  @font-face {
+    font-family: 'Cairo-H';
+    src: url('../Fonts/Cairo-Black.ttf');
+  }
+
+  @font-face {
+    font-family: 'Cairo-B';
+    src: url('../Fonts/Cairo-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Cairo-EB';
+    src: url('../Fonts/Cairo-ExtraBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Cairo-EL';
+    src: url('../Fonts/Cairo-ExtraLight.ttf');
+  }
+
+  @font-face {
+    font-family: 'Cairo-L';
+    src: url('../Fonts/Cairo-Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'Cairo-M';
+    src: url('../Fonts/Cairo-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'Cairo-R';
+    src: url('../Fonts/Cairo-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Cairo-SB';
+    src: url('../Fonts/Cairo-SemiBold.ttf');
+  }

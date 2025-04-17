@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz 01</title>
+  <script>
+    let pinmoney = 5000;
+    let tofu = Number(prompt("사게 될 두부의 갯수를 입력하세요."));
+    let tofumoney = 1500;
+
+    function errand (a,b,c) {
+      const total = a - (b * c);
+      if(a >= b * c ) {
+        document.write(`나는 두부 ${b}개를 샀고 잔돈이 ${total}원 남았어.`);
+      }
+      else {
+        document.write(`나는 돈이 부족해서 두부를 못샀어`);
+      }
+    }
+
+    errand(pinmoney,tofu,tofumoney);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,74 @@
+  @font-face {
+    font-family: 'Montserrat-H';
+    src: url('../Fonts/Montserrat-Black.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-B';
+    src: url('../Fonts/Montserrat-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-EB';
+    src: url('../Fonts/Montserrat-ExtraBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-EL';
+    src: url('../Fonts/Montserrat-ExtraLight.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-L';
+    src: url('../Fonts/Montserrat-Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-M';
+    src: url('../Fonts/Montserrat-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-R';
+    src: url('../Fonts/Montserrat-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-SB';
+    src: url('../Fonts/Montserrat-SemiBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-T';
+    src: url('../Fonts/Montserrat-Thin.ttf');
+  }
+
+  @font-face {
+    font-family: 'Display-H';
+    src: url('../Fonts/PlayfairDisplay-Black.ttf');
+  }
+
+  @font-face {
+    font-family: 'Display-B';
+    src: url('../Fonts/PlayfairDisplay-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Display-EB';
+    src: url('../Fonts/PlayfairDisplay-ExtraBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Display-M';
+    src: url('../Fonts/PlayfairDisplay-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'Display-R';
+    src: url('../Fonts/PlayfairDisplay-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Display-SB';
+    src: url('../Fonts/PlayfairDisplay-SemiBold.ttf');
+  }

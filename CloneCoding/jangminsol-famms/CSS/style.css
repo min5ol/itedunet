@@ -1,0 +1,782 @@
+body {
+  overflow-x: hidden;
+}
+
+/*! 헤더 영역 */
+
+/* 헤더 영역의 배경색 지정 */
+header {
+  width: 100vw;
+  background-color: white;
+}
+
+/* 헤더 영역의 패딩 값 지정 */
+
+.header-container {
+  padding: 1.04vw 20.31vw;
+}
+
+/* flex를 이용해 헤더 영역 요소들 정렬, 좌우 맞춤 및 세로 센터 맞춤 */
+
+.top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 헤더 영역에 들어간 이미지들 사이즈 조정 */
+
+.logo img {
+  width: 13.28vw;
+}
+
+.cart img,
+.search img {
+  width: 1.15vw;
+}
+
+.top-dropbtn img {
+  width: .52vw;
+  margin-left: .52vw;
+}
+
+/* 메뉴 영역 flex를 이용해 가로정렬 */
+
+header nav ul {
+  display: flex;
+}
+
+/* 드롭다운 */
+
+.top-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  z-index: 90;
+}
+
+.top-dropdown-content.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-dropdown-content a {
+  padding: 5px;
+  font-family: 'Montserrat-R';
+  cursor: pointer;
+  z-index: 99;
+}
+
+.top-dropdown-content a:hover {
+  background-color: #ccc;
+}
+
+
+/* 메뉴들 글꼴 및 색상 지정 */
+
+/* javascript 사용 불가로 인해 home에만 클래스 따로 지정 */
+.top-active-menu {
+  font-family: 'Montserrat-B';
+  color: #f7444e;
+  font-size: 0.83vw;
+}
+
+.top-dropbtn {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.top-menu,
+.top-dropbtn {
+  font-family: 'Montserrat-B';
+  color: black;
+  font-size: 0.83vw;
+}
+
+/* 메뉴들 간격 조정 */
+.top-line nav ul li {
+  padding: 0 2.08vw;
+}
+
+.cart,
+.search {
+  padding: 0 0 0 1.08vw;
+}
+
+
+/* ✅ CSS - 기본 슬라이더 스타일 유지 */
+#slider {
+  position: relative;
+  overflow: hidden;
+  background-image: url('../img/slider-bg.jpg');
+  width: 100vw;
+  height: 57.14vw;
+}
+
+.slides {
+  display: flex;
+  width: 500vw;
+  /* 복제 포함 슬라이드 총 5개 */
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  padding-left: 20.31vw;
+  flex-shrink: 0;
+}
+
+.slide .slide-title-color {
+  font-family: 'Display-B';
+  font-size: 3.75vw;
+  color: #e53935;
+  margin-bottom: -1.8vw;
+}
+
+.slide .slide-title {
+  font-family: 'Display-B';
+  font-size: 3.75vw;
+  color: black;
+  margin-bottom: 1.3vw;
+}
+
+.slide p {
+  font-family: 'Montserrat-R';
+  font-size: .83vw;
+  color: #1c1c1c;
+  margin-bottom: 3vw;
+}
+
+.shop-btn {
+  display: inline-block;
+  padding: 1.04vw 2.34vw;
+  background-color: #e53935;
+  color: white;
+  width: 9.38vw;
+  font-family: 'Montserrat-B';
+  font-size: .83vw;
+}
+
+.shop-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 0 .05vw #e53935;
+  color: #e53935;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 3vw;
+  left: 20.31vw;
+  width: 15.63vw;
+}
+
+.dot {
+  display: inline-block;
+  width: .63vw;
+  height: .63vw;
+  margin: 0 .26vw;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+  background-color: #e53935;
+  transform: scale(1.5);
+}
+
+
+/*! why 영역 */
+
+/* 컨테이너 패딩값 주기 */
+.why-container {
+  padding: 4.17vw 20.31vw 3.13vw 20.31vw;
+}
+
+/* why 영역 정렬 */
+
+.why-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* why top 부분 폰트 및 밑줄 */
+
+.why-flex p:nth-child(1) {
+  font-family: 'Display-SB';
+  font-size: 2.92vw;
+  color: black;
+  padding: 1vw 0;
+}
+
+.hr {
+  display: block;
+  width: 3.65vw;
+  height: .36vw;
+  background-color: #e53935;
+  margin-bottom: 3vw;
+}
+
+/* why 영역 이미지 사이즈 조정 */
+
+.why-card img {
+  height: 3.13vw;
+}
+
+/* 카드 영역 가로 정렬 */
+.why-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 카드 영역 배치 및 색상 구현 */
+
+.why-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #002c3e;
+  padding: 2.6vw 2.6vw 4vw 2.6vw;
+  align-items: center;
+}
+
+.why-card-title {
+  font-family: 'Montserrat-B';
+  font-size: 1.15vw;
+  color: white;
+  padding: 1vw 0;
+}
+
+.why-card-subtitle {
+  font-family: 'Montserrat-R';
+  color: white;
+}
+
+/*! New Arrival 영역 */
+
+#arrival {
+  background-image: url('../img/arrival-bg.png');
+  width: 100vw;
+  height: 26.04vw;
+}
+
+/* arrival 영역 정렬 */
+
+.arrival-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 7.03vw 0 6.25vw 50.52vw;
+}
+
+/* arrival 내용 부분 서식 디자인 */
+
+.arrival-title {
+  font-family: 'Display-SB';
+  font-size: 2.92vw;
+  color: #002c3e;
+  margin-bottom: .6vw;
+}
+
+.arrival-subtitle {
+  font-family: 'Montserrat-R';
+  font-size: .83vw;
+  color: black;
+  margin-bottom: .2vw;
+}
+
+.arrival-subtitle:nth-child(5) {
+  margin-bottom: 2vw;
+}
+
+
+/*! Products 영역 */
+
+#products {
+  width: 100vw;
+}
+
+/* 컨테이너 비율 지정 */
+
+.products-container {
+  padding: 5vw 20.83vw;
+}
+
+/* 플렉스 이용하여 위치 정렬 */
+
+.products-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 1vw;
+}
+
+/* 텍스트 서식 */
+
+.products-title {
+  margin-bottom: 1vw;
+}
+
+.products-title span {
+  font-family: 'Display-SB';
+  font-size: 2.92vw;
+}
+
+.products-title span:nth-child(1) {
+  color: black;
+}
+
+.products-title span:nth-child(2) {
+  color: #e53935;
+}
+
+/* item 카드 영역 구성 */
+.product-item {
+  width: 17.86vw;
+  height: 17.08vw;
+  background-color: #f7f8f9;
+  border: .26vw solid white;
+  border-radius: .21vw;
+  box-shadow: 0 .15vw .42vw rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .83vw;
+}
+
+.product-item img {
+  max-width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.item-text {
+  width: 17.86vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-text span {
+  font-family: 'Montserrat-B';
+  font-size: .94vw;
+}
+
+.item-text span:nth-child(1) {
+  color: black;
+}
+
+.item-text span:nth-child(2) {
+  color: #002c3e;
+}
+
+/* 버튼 양식 */
+
+.view-btn {
+  display: inline-block;
+  padding: 1.04vw 2.34vw;
+  background-color: #e53935;
+  color: white;
+  width: 15vw;
+  font-family: 'Montserrat-B';
+  font-size: .83vw;
+  text-align: center;
+  margin-top: 3vw;
+}
+
+.view-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 0 .05vw #e53935;
+  color: #e53935;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+/* product hover */
+.product-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.product-item:hover::before {
+  opacity: 1;
+}
+
+.product-buttons {
+  position: absolute;
+  bottom: 1vw;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  /* 100% 아래에 배치되어 카드 밖에 숨어 있음 */
+  opacity: 0;
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.product-item:hover .product-buttons {
+  transform: translate(-50%, -100%);
+  opacity: 1;
+  z-index: 2;
+}
+
+.btn {
+  width: 8vw;
+  padding: 0.6vw 0;
+  border: none;
+  border-radius: 5vw;
+  font-size: 0.8vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-cart-btn {
+  background-color: #e53935;
+  color: #fff;
+}
+
+.add-cart-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #e53935;
+  border: .05vw solid #e53935;
+}
+
+.buy-now-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.buy-now-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border: .05vw solid black;
+}
+
+
+/*! 구독 영역 */
+
+/* 영역 배경색 지정 */
+#subscribe {
+  background-color: #d4ced0;
+}
+
+/* 영역 패딩값 지정 */
+.subscribe-container {
+  padding: 4.17vw 26.56vw;
+}
+
+/* flex 사용하여 정렬 */
+
+.subscribe-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 구독 영역 서식 설정 */
+
+.subscribe-flex p:nth-child(1) {
+  font-family: 'Display-B';
+  font-size: 2.08vw;
+  color: #002c3e;
+}
+
+.subscribe-flex p:nth-child(2) {
+  font-family: 'Montserrat-R';
+  font-size: .83vw;
+  color: black;
+  margin-top: .3vw;
+}
+
+.subscribe-input {
+  width: 100%;
+  border: none;
+  padding: .8vw;
+  border-radius: 3vw;
+  margin-top: 1vw;
+}
+
+.subscribe-input::placeholder {
+  font-family: 'Montserrat-R';
+  font-size: .63vw;
+  color: black;
+  padding-left: .5vw;
+}
+
+.subscribe-submit {
+  width: 13vw;
+  font-family: 'Montserrat-B';
+  font-size: .9vw;
+  border: none;
+  border-radius: 3vw;
+  background-color: #e53935;
+  color: white;
+  padding: .6vw;
+  margin-top: 2vw;
+}
+
+/*! 고객 영역 */
+
+/* 섹션 가로값 지정 */
+
+#customer {
+  width: 100vw;
+}
+
+/* 섹션 패딩값 지정 */
+
+.customer-container {
+  padding: 4.17vw 27.08vw;
+}
+
+/* flex를 이용한 정렬 */
+
+.customer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer-items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 내용 서식 */
+
+.customer-flex p:nth-child(1) {
+  font-family: 'Display-B';
+  font-size: 2.92vw;
+  color: black;
+}
+
+.customer-btn {
+  width: 2.5vw;
+  height: 2.5vw;
+  border: none;
+  background-color: #e53935;
+  border-radius: 3vw;
+}
+
+.customer-btn:nth-child(1) {
+  position: absolute;
+  top: 3vw;
+  left: 6vw;
+}
+
+.customer-btn:nth-child(3) {
+  position: absolute;
+  top: 3vw;
+  right: 6vw;
+}
+
+.customer-btn img {
+  width: 1.8vw;
+}
+
+.customer-btn:hover {
+  background-color: black;
+}
+
+.customer-item img {
+  width: 7.81vw;
+  border-radius: 10vw;
+}
+
+.customer-name {
+  font-family: 'Montserrat-SB';
+  font-size: 1.04vw;
+  color: black;
+  margin-top: 1vw;
+}
+
+.customer-title {
+  font-family: 'Montserrat-M';
+  font-size: .83vw;
+  color: #ababaa;
+  margin-bottom: .5vw;
+}
+
+.customer-subtitle {
+  font-family: 'Montserrat-M';
+  font-size: .7vw;
+  color: #4a4a4a;
+  margin-top: .3vw;
+}
+
+/*! 푸터 영역 */
+
+footer {
+  width: 100vw;
+  background-color: #f8f8f8;
+}
+
+.footer-container {
+  padding: 4.17vw 20.05vw;
+}
+
+/* flex */
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content-1,
+.footer-content-2,
+.footer-content-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 이미지 조정 */
+.footer-content-1 img {
+  width: 10.94vw;
+}
+
+/* 텍스트 서식 */
+
+.f-info {
+  margin: .7vw 0;
+}
+
+.f-1-title {
+  display: inline;
+  font-family: 'Montserrat-SB';
+  font-size: .83vw;
+  color: black;
+}
+
+.f-1-subtitle {
+  display: inline;
+  font-family: 'Montserrat-L';
+  font-size: .83vw;
+  color: black;
+}
+
+.footer-content-2 p {
+  font-family: 'Montserrat-B';
+  font-size: .83vw;
+  color: black;
+  margin-bottom: 1vw;
+}
+
+.footer-content-2 nav ul li {
+  font-family: 'Montserrat-R';
+  font-size: .83vw;
+  color: black;
+  margin-bottom: .5vw;
+}
+
+.footer-content-3 p:nth-child(1) {
+  font-family: 'Montserrat-B';
+  font-size: .83vw;
+  color: black;
+  margin-bottom: 2vw;
+}
+
+.footer-content-3 p:nth-child(2) {
+  font-family: 'Montserrat-R';
+  font-size: .83vw;
+  color: black;
+}
+
+.footer-content-3 p:nth-child(3) {
+  font-family: 'Montserrat-R';
+  font-size: .83vw;
+  color: black;
+}
+
+/* 구독 영역 */
+
+.f-input {
+  display: flex;
+  margin-top: 1vw;
+}
+
+.f-input-text {
+  border: .05vw solid #cccccc;
+  padding: .52vw;
+}
+
+.f-input-text::placeholder {
+  font-family: 'Montserrat-R';
+  font-size: .63vw;
+  color: #cccccc;
+  padding-left: .3vw;
+}
+
+.f-input-submit {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  font-family: 'Montserrat-M';
+  font-size: .83vw;
+  padding: .52vw;
+}
+
+/*! 저작권 영역 */
+
+/* copy 영역 배경색 설정 */
+
+#copy {
+  background-color: #222222;
+}
+
+.copy-container {
+  padding: 1.15vw 30vw;
+}
+
+.copy-text p {
+  display: flex;
+  justify-content: center;
+}
+
+.copy-text p {
+  color: white;
+  font-family: 'Montserrat-R';
+}
+
+.copy-text p a {
+  color: #e53935;
+}

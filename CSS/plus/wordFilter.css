@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-family: 'AppleSDGothicNeoSB';
+  font-size: 32px;
+  color: black;
+  margin-top: 200px;
+  margin-bottom: 10px;
+}
+
+#filter {
+  width: 300px;
+  height: 50px;
+  font-family: 'AppleSDGothicNeoM';
+  padding: 20px 5px;
+  color: black;
+  border: solid 1px gray;
+  font-size: 18px;
+}
+
+ul li {
+  width: 300px;
+  height: 50px;
+  padding: 15px 5px;
+  border: solid 1px gray;
+  font-family: 'AppleSDGothicNeoM';
+  font-size: 18px;
+}
+
+#filter::placeholder {
+  font-family: 'AppleSDGothicNeoM';
+  font-size: 18px;
+}

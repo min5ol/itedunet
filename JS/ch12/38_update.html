@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>노드 변경</title>
+</head>
+<body>
+  <div id="div1">
+    <p id="p1">this is a paragraph</p>
+    <p id="p2">this is another paragraph</p>
+  </div>
+
+  <script>
+    var parent = document.querySelector("#div1");
+    var child = document.querySelector("#p1");
+    var para = document.createElement("p");
+    var node = document.createTextNode("this is new.");
+
+    para.appendChild(node);
+    parent.replaceChild(para, child);
+
+    // child.innerHTML = `this is new.`;
+
+    // innerHTML의 문제점: 태그+텍스트 인식, 보안에 취약
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열의 특징</title>
+  <script>
+    var friends = new Array(3);
+    friends[0] = "장민솔";
+    friends[1] = "박아영";
+    friends[2] = "서한교";
+
+    document.write("여기까지가 지정된 배열 크기만큼 데이터를 할당한 결과이다." + "<br>");
+    friends[3] = "모랭이";
+    document.write(friends[3] + "<br>");
+    document.write(friends.length + "<br>");
+
+    friends['friend'] = "철수";
+    document.write(friends.length);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애니메이션의 반복 횟수 설정하기</title>
+  <style>
+    img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: relative;
+      animation: ballmove 3s;
+    }
+
+    img:nth-child(1) {
+      animation-delay: 3s;
+      animation-direction: reverse;
+      animation-iteration-count: 2;
+    }
+    
+    img:nth-child(2) {
+      animation-delay: 5s;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: 5;
+    }
+
+    @keyframes ballmove {
+      from { left: 0px; transform: rotate(0deg);}
+      to { left: 300px; transform: rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="../img/8ball.svg" alt="8ball">
+    <img src="../img/8ball.svg" alt="8ball">
+  </div>
+  <p><strong>참고: </strong>IE9이하 혹은 낮은 버전에서 지원하지 않습니다.</p>
+</body>
+</html>

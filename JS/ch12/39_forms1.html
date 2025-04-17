@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <form id="myForm" name="form1">
+    first name : <input type="text" name="fname" value="Donald"><br>
+    first name : <input type="text" name="lname" value="Duck"><br>
+  </form>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+
+  <script>
+    function myFunction() {
+      // document.forms[0].elements.item(0).value = "newName";
+      
+      document.forms[0].name = "newName";
+      let x = document.forms[0].name;
+      document.querySelector("#demo").innerHTML = x;
+    }
+  </script>
+</body>
+</html>

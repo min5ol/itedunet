@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>절대 위치 설정으로 요소 배치하기</title>
+  <style>
+    body {
+      font-weight: bold;
+      font-size: 12pt;
+    }
+
+    .ap1 {
+      position: absolute;
+      left: 30px;
+      top: 70px;
+      background-color: yellow;
+      width: 400px;
+      height: 50px;
+    }
+    
+    .ap2 {
+      position: absolute;
+      left: 40px;
+      top: 90px;
+      background-color: lightgreen;
+      width: 400px;
+      height: 50px;
+    }
+
+    
+    .rp {
+      position: relative;
+      left: 50px;
+      top: 80px;
+      background-color: cyan;
+      width: 400px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>positioning style 3</h1>
+  <div class="ap1">절대 위치 설정 적용 1 - left 30px, top 70px</div>
+  <div class="ap2">절대 위치 설정 적용 2 - left 40px, top 90px</div>
+  <div class="rp">상대 위치 설정 적용 - left 50px, top 80px</div>
+</body>
+</html>
