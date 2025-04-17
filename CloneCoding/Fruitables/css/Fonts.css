@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Open-B';
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Open-EB';
+  src: url('../fonts/OpenSans-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Open-L';
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Open-M';
+  src: url('../fonts/OpenSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Open-R';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open-SB';
+  src: url('../fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-H';
+  src: url('../Fonts/Raleway-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-B';
+  src: url('../Fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-EB';
+  src: url('../Fonts/Raleway-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-EL';
+  src: url('../Fonts/Raleway-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-L';
+  src: url('../Fonts/Raleway-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-M';
+  src: url('../Fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-R';
+  src: url('../Fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-SB';
+  src: url('../Fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-T';
+  src: url('../Fonts/Raleway-Thin.ttf');
+}

@@ -1,0 +1,157 @@
+.container {
+  padding: 0px 280.5px;
+}
+
+/*! 헤더 첫번째 영역  */
+
+.top1-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  margin: 10px 0;
+  background-color: #81C408;
+  border-radius: 50px 20px 50px 20px;
+}
+
+.top1-line-left {
+  display: flex;
+  align-items: center;
+}
+
+.top1-line-left-1 {
+  display: flex;
+  margin-right: 15px;
+  font-family: 'Open-M';
+  font-size: 16px;
+  color: white;
+}
+
+.top1-line-left img {
+  width: 18px;
+  margin-right: 5px;
+}
+
+.top1-line-right-1 {
+  margin-left: 10px;
+  font-family: 'Open-M';
+  font-size: 16px;
+  color: white;
+}
+
+/*! 헤더 두번째 영역  */
+
+.top2-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.top2-line-2 img {
+  width: 20px;
+}
+
+.top2-line-3 img {
+  width: 26px;
+}
+
+.top2-line-2 {
+  display: flex;
+}
+
+.top2-line-1 {
+  font-family: 'Raleway-EB';
+  font-size: 40px;
+  color: #81C408;
+}
+
+.nav-item {
+  padding: 0 30px;
+  font-family: 'Open-R';
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: 10px;
+  background-color: #F4F6F8;
+  width: 160px;
+  border-radius: 10px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  padding: 5px 0;
+  font-family: 'Open-R';
+  color: #6c757d;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  color: #81C408;
+  background-color: #ffc107;
+  border-radius: 5px;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.top2-line-3 {
+  display: flex;
+}
+
+.top2-line-3 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.top2-line-3 a:nth-child(1) {
+  border: 2px solid #ffc107;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+.top2-line-3 a:nth-child(1):hover {
+  background-color: #ffc107;
+}
+
+.top2-line-3 a:nth-child(2):hover, .top2-line-3 a:nth-child(3):hover {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(55%) saturate(741%) hue-rotate(41deg) brightness(93%) contrast(50%);
+}
+
+#main {
+  background-image: url(../img/hero-img.jpg);
+  width: 1905px;
+  height: 500px;
+  margin: 20px 0;
+  background-position: center center;
+}

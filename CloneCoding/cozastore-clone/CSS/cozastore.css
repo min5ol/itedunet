@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .top-bar-containor {
   height: 40px;
   display: block;
@@ -162,56 +166,99 @@
   top: -7px;
 }
 
-.section-slide {
-  position: relative;
-  z-index: 0;
-}
+/*! slider  */
 
-.slick-slider {
-  background-image: url(../img/slide-02.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
+#slider {
+  position: relative;
+  width: 1905px;
   height: 930px;
-  position: relative;
-  margin-top: -84px; /* 헤더 높이만큼 위로 당겨 */
-  z-index: -1; /* 메뉴 아래 깔리게 */
+  top: -85px;
 }
 
-.containor-slick-full {
-  margin: 0 262.5px;
-  padding: 0 15px;;
-}
-
-.flex-slick {
+.slides {
   display: flex;
-  flex-direction: column;
-  padding: 100px 0 30px 0;
-  align-items: flex-start;
-  justify-content: center;
-  height: 930px;
+  width: 300vw;
+  height: 100%;
 }
 
-.slick-subtitle {
-  font-family: 'Pretendard-M';
-  font-size: 28px;
+.slide {
+  position: relative;
+  width: 100vw;
+  height: 100%;
 }
 
-.slick-title {
-  font-family: 'Display-B';
-  font-size: 60px;
-  padding: 19px 0 43px 0;
+.slide-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.slick-shop {
-  background-color: rgb(113, 127, 224);
-  border-radius: 30px;
-  padding: 15px 35px;
+.slide-item {
+  position: absolute;
+  top: 360px;
+  left: 350px;
   color: white;
+  z-index: 2;
+}
+
+.slide-subtitle {
+  font-size: 28px;
+  font-family: 'Pretendard-M';
+  margin-bottom: 15px;
+  color: black;
+}
+
+.slide-title {
+  font-size: 60px;
+  font-family: 'Display-B';
+  margin-bottom: 35px;
+  color: black;
+}
+
+.slide-btn {
+  display: inline-block;
+  background-color: rgb(113, 127, 224);
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
   font-family: 'Pretendard-M';
   font-size: 16px;
-  line-height: 22px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
+
+.slide-btn:hover {
+  background-color: rgb(93, 107, 204);
+}
+
+.slide-btn-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+}
+
+.slide-btn-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+}
+
+.slide-btn-left, .slide-btn-right {
+  width: 80px;
+  height: auto;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.slide-btn-left:hover, .slide-btn-right:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/*! banner  */
 
 .banner-containor {
   margin: 0 262.5px;

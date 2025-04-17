@@ -75,3 +75,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// 슬라이더 만들기
+
+const slides = document.querySelector('.slides');
+const slide = document.querySelectorAll('.slide');
+const btnLeft = document.querySelector('.slide-btn-left');
+const btnRight = document.querySelector('.slide-btn-right');
+
+let index = 0;
+const total = slide.length;
+
+function sliding() {
+  slides.style.transform = `translateX(-${index * 100}vw)`;
+  slides.style.transition = 'transform 0.6s ease';
+}
+
+btnLeft.addEventListener('click', () => {
+  index = (index === 0) ? total - 1 : index - 1 ;
+  sliding();
+})
+
+btnRight.addEventListener('click', () => {
+  index = (index === total - 1) ? 0 : index + 1;
+  sliding();
+})
