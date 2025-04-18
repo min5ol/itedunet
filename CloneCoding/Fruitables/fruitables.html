@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/Fonts.css">
   <link rel="stylesheet" href="./css/fruitables.css">
-  <script src="./js/fruitables.js" defer></script>
+  <script src="./js/fruitables.js"></script>
   <title>Fruitables</title>
 </head>
 
@@ -37,38 +37,480 @@
         </div>
       </div>
     </div>
-    <div id="top2">
-      <div class="container">
-        <div class="top2-line">
-          <a class="top2-line-1" href="#">Fruitables</a>
-          <div class="top2-line-2">
-            <a href="./fruitables.html" class="nav-item">Home</a>
-            <a href="shop.html" class="nav-item">Shop</a>
-            <a href="ShopDetail.html" class="nav-item">Shop Detail</a>
-            <div class="nav-item dropdown">
-              <a href="#" class="dropdown-btn">Pages <img src="./img/arrowbottom-darkgrey.svg"></a>
-              <div class="dropdown-content">
-                <a href="#" class="dropdown-item">Cart</a>
-                <a href="#" class="dropdown-item">Chackout</a>
-                <a href="#" class="dropdown-item">Testimonial</a>
-                <a href="#" class="dropdown-item">404 Page</a>
+  </header>
+
+  <div id="top2">
+    <div class="container">
+      <div class="top2-line">
+        <a class="top2-line-1" href="#">Fruitables</a>
+        <div class="top2-line-2">
+          <a href="./fruitables.html" class="nav-item-active">Home</a>
+          <a href="shop.html" class="nav-item">Shop</a>
+          <a href="ShopDetail.html" class="nav-item">Shop Detail</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="dropdown-btn">Pages <img src="./img/arrowbottom-darkgrey.svg"></a>
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">Cart</a>
+              <a href="#" class="dropdown-item">Chackout</a>
+              <a href="#" class="dropdown-item">Testimonial</a>
+              <a href="#" class="dropdown-item">404 Page</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+        <div class="top2-line-3">
+          <a href="#" class="nav-icon"><img src="./img/search-brand.svg"></a>
+          <a href="#" class="nav-icon"><img src="./img/shopping-brand.svg"></a>
+          <a href="#" class="nav-icon"><img src="./img/user-brand.svg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="main">
+    <div class="container">
+      <div class="main-row">
+        <div class="main-row-left">
+          <p class="main-left-subtitle">100% Organic Foods</p>
+          <p class="main-left-title">Organic Veggies &</p>
+          <p class="main-left-title">Fruits Foods</p>
+          <input class="main-input-text" type="text" placeholder="Search">
+          <input class="main-input-submit" type="submit" value="Submit Now">
+        </div>
+        <div class="main-row-right">
+          <div class="slides-wrapper">
+            <img class="main-btn main-btn-left" src="./img/arrowleft-white.svg" alt="left">
+            <img class="main-btn main-btn-right" src="./img/arrowright-white.svg" alt="right">
+            <div class="slides">
+              <div class="slide active">
+                <img src="./img/hero-img-1.png">
+                <span>Fruits</span>
+              </div>
+              <div class="slide">
+                <img src="./img/hero-img-2.jpg">
+                <span>Vegetables</span>
               </div>
             </div>
-            <a href="contact.html" class="nav-item">Contact</a>
-          </div>
-          <div class="top2-line-3">
-            <a href="#" class="nav-icon"><img src="./img/search-brand.svg"></a>
-            <a href="#" class="nav-icon"><img src="./img/shopping-brand.svg"></a>
-            <a href="#" class="nav-icon"><img src="./img/user-brand.svg"></a>
           </div>
         </div>
       </div>
     </div>
-  </header>
-  <section id="main">
-    <div class="container"></div>
   </section>
-  <section id="tabs"></section>
+
+  <section id="icon">
+    <div class="container">
+      <div class="icon-cards">
+        <div class="icon-card">
+          <img src="./img/icon-1.png">
+          <p class="icon-title">Free Shipping</p>
+          <p class="icon-subtitle">Free on order over $300</p>
+        </div>
+
+        <div class="icon-card">
+          <img src="./img/icon-2.png">
+          <p class="icon-title">Security Payment</p>
+          <p class="icon-subtitle">100% security payment</p>
+        </div>
+
+        <div class="icon-card">
+          <img src="./img/icon-3.png">
+          <p class="icon-title">30 Day Return</p>
+          <p class="icon-subtitle">30 day money guarantee</p>
+        </div>
+
+        <div class="icon-card">
+          <img src="./img/icon-4.png">
+          <p class="icon-title">24/7 Support</p>
+          <p class="icon-subtitle">Support every time fast</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tabs">
+    <div class="container">
+      <div class="tabs">
+        <div class="tabs-name">
+          <p class="tabs-name-title">Our Organic Products</p>
+          <div class="tabs-btn-name">
+            <div class="tab-btn active" data-tab="1">All Products</div>
+            <div class="tab-btn" data-tab="2">Vegetables</div>
+            <div class="tab-btn" data-tab="3">Fruits</div>
+            <div class="tab-btn" data-tab="4">Bread</div>
+            <div class="tab-btn" data-tab="5">Meat</div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="content1">
+          <div class="cards">
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-5.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Grapes</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-5.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Grapes</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-2.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Raspberries</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-4.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Apricots</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-3.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Banana</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-1.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Oranges</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-2.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Raspberries</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-5.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Grapes</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="content2">
+          <div class="cards">
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-5.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Grapes</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-2.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Raspberries</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="content3">
+          <div class="cards">
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-1.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Oranges</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-6.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Apple</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="content4">
+          <div class="cards">
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-5.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Grapes</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-4.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Apricots</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="content5">
+          <div class="cards">
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-3.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Banana</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-2.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Raspberries</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <span>Fruits</span>
+                <img src="./img/fruite-item-1.jpg">
+              </div>
+              <div class="card-bottom">
+                <p class="card-bottom-title">Oranges</p>
+                <p class="card-bottom-subtitle">Lorem ipsum dolor sit amet</p>
+                <p class="card-bottom-subtitle">consectetur adipisicing elit sed do</p>
+                <p>eiusmod te incididunt</p>
+                <div class="price">
+                  <p>$4.99 / kg</p>
+                  <a href="#"><img src="./img/shopping-brand.svg">
+                    <p>Add to cart</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <seciton id="featured">
+    <div class="container">
+      <div class="feature-cards">
+        <div class="feature-card-1">
+          <img src="./img/featur-1.jpg">
+          <div class="feature-bottom-1"></div>
+          <div class="feature-item-1">
+            <p class="feature-title-1">Fresh Apples</p>
+            <p class="feature-subtitle-1">20% OFF</p>
+          </div>
+        </div>
+
+        <div class="feature-card-2">
+          <img src="./img/featur-2.jpg">
+          <div class="feature-bottom-2"></div>
+          <div class="feature-item-2">
+            <p class="feature-title-2">Fresh Apples</p>
+            <p class="feature-subtitle-2">20% OFF</p>
+          </div>
+        </div>
+
+        <div class="feature-card-3">
+          <img src="./img/featur-3.jpg">
+          <div class="feature-bottom-3"></div>
+          <div class="feature-item-3">
+            <p class="feature-title-3">Fresh Apples</p>
+            <p class="feature-subtitle-3">20% OFF</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </seciton>
+
+
 </body>
 
 </html>
