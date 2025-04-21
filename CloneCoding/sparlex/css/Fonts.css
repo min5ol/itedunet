@@ -1,0 +1,39 @@
+  @font-face {
+    font-family: 'Open-B';
+    src: url('../fonts/OpenSans-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Open-EB';
+    src: url('../fonts/OpenSans-ExtraBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Open-L';
+    src: url('../fonts/OpenSans-Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'Open-M';
+    src: url('../fonts/OpenSans-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'Open-R';
+    src: url('../fonts/OpenSans-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Open-SB';
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'PT-B';
+    src: url('../fonts/PTSerif-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'PT-R';
+    src: url('../fonts/PTSerif-Regular.ttf');
+  }

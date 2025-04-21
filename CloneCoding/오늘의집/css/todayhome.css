@@ -1,0 +1,241 @@
+.container {
+  padding: 0 350px;
+}
+
+/* 헤더 정렬 */
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-row ul {
+  display: flex;
+}
+
+.header-row-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-row-left {
+  display: flex;
+  align-items: center;
+}
+
+/* 헤더 이미지 사이즈 정리 */
+
+.header-row-right .input img {
+  width: 20px;
+}
+
+.shopping-cart img {
+  width: 48px;
+}
+
+.dropdown-btn img {
+  width: 16px;
+}
+
+.dropdown-content img {
+  width: 32px;
+  height: auto;
+}
+
+/* 드롭다운 */
+
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 400px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.dropdown-contents.show {
+  display: block;
+  position: absolute;
+  top: 50px; /* 원하는 위치 */
+  left: -200px;
+  padding: 20px;
+  background-color: white;
+  z-index: 9999;
+}
+
+.dropdown-content {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content img {
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.dropdown-content-info p:nth-child(1) {
+  font-family: 'AppleSDGothicNeoR';
+  font-size: 16px;
+  color: black;
+}
+
+.dropdown-content-info p:nth-child(2) {
+  font-family: 'AppleSDGothicNeoR';
+  font-size: 12px;
+  color: gray;
+}
+
+/* 헤더 꾸미기 */
+
+.header-nav-name {
+  padding: 20px;
+  font-family: 'AppleSDGothicNeoSB';
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.header-nav-name.active {
+  padding: 20px;
+  font-family: 'AppleSDGothicNeoB';
+  font-size: 18px;
+  color: #0AA5FF;
+}
+
+.header-row-nav-1 li:hover {
+  color: #0AA5FF;
+}
+
+.input {
+  position: relative;
+}
+
+.input img {
+  position: absolute;
+  top: 11px;
+  left: 5px;
+}
+
+.shopping-cart {
+  padding: 20px;
+}
+
+.header-row-right input {
+  width: 300px;
+  height: 45px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 10px 30px;
+}
+
+.header-row-right ul {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  margin-left: 30px;
+  position: relative;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #0AA5FF;
+  color: white;
+  font-family: 'AppleSDGothicNeoM';
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.header-row-right ul li {
+  padding: 0 10px;
+  font-family: 'AppleSDGothicNeoM';
+  font-size: 14px;
+}
+
+.header-row-right ul li:nth-child(1), .header-row-right ul li:nth-child(2) {
+  border-right: 1px solid lightgrey;
+}
+
+/* nav 섹션 */
+
+.nav-name {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  font-family: 'AppleSDGothicNeoB';
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  color: #0AA5FF;
+}
+
+.nav-btn img {
+  width: 16px;
+  margin-left: 5px;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-contents {
+  display: none;
+  position: absolute;
+  width: 150px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.nav-contents.show {
+  display: block;
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  z-index: 9999;
+}
+
+.nav-contents p {
+  font-family: 'AppleSDGothicNeoR';
+  font-size: 16px;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-contents p:hover {
+  color: #0AA5FF;
+}
+
+.nav-name a {
+  font-family: 'AppleSDGothicNeoB';
+  font-size: 18px;
+  padding: 10px;
+}
+
+.nav-name a:hover {
+  color: #0AA5FF;
+}
+
+.community-nav {
+  display: block;
+}
+
+.shopping-nav, .interior-nav {
+  display: none;
+}
