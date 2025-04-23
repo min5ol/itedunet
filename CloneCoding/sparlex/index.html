@@ -6,244 +6,157 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/Fonts.css">
-  <link rel="stylesheet" href="./css/sparlex.css">
-  <script src="./js/sparlex.js" defer></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/7d59311e3d.js" crossorigin="anonymous"></script>
+  <script src="./js/dropdown.js" defer></script>
+  <script src="./js/slider.js" defer></script>
+  <script src="./js/tab.js" defer></script>
   <title>Sparlex</title>
 </head>
-
-<body>
-  <header>
-    <div class="header-top-wrapper">
-      <div class="container header-top">
-        <div class="header-top-left">
-          <div class="location">
-            <a href="#"><img src="./img/location-pink.svg"></a>
-            <a href="#">Find A Loction</a>
-          </div>
-          <div class="call">
-            <a href="#"><img src="./img/call-pink.svg"></a>
-            <a href="#">+01234567890</a>
-          </div>
-          <div class="post">
-            <a href="#"><img src="./img/post-pink.svg"></a>
-            <a href="#">Example@gmail.com</a>
+<header>
+  <div class="container">
+    <div class="header-wrapper">
+      <p class="logo">Sparlex</p>
+      <ul>
+        <li><a href="#" class="header-menu-active">Home</a></li>
+        <li><a href="#" class="header-menu">About</a></li>
+        <li><a href="#" class="header-menu">Services</a></li>
+        <li><a href="#" class="header-menu">Price</a></li>
+        <div class="dropdown">
+          <div class="drop-btn">Pages <i class="fa-solid fa-chevron-down"></i></div>
+          <div class="drop-contents">
+            <div class="drop-content">Team</div>
+            <div class="drop-content">Testimonial</div>
+            <div class="drop-content">Gallery</div>
+            <div class="drop-content">Appointment</div>
+            <div class="drop-content">404 page</div>
           </div>
         </div>
-        <div class="header-top-right">
-          <a href="#"><img src="./img/facebook-pink.svg"></a>
-          <a href="#"><img src="./img/twitter-pink.svg"></a>
-          <a href="#"><img src="./img/instagram-pink.svg"></a>
-          <a href="#"><img src="./img/linkedin-pink.svg"></a>
-        </div>
+        <li><a href="#" class="header-menu">Contact Us</a></li>
+      </ul>
+      <div class="header-right">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#">Book Appointment</a>
       </div>
     </div>
-    <div class="header-bottom-wrapper">
-      <div class="container header-bottom">
-        <p class="header-bottom-left">Sparlex</p>
-        <div class="header-bottom-center">
-          <a href="#" class="header-bottom-menu-active">Home</a>
-          <a href="#" class="header-bottom-menu">About</a>
-          <a href="#" class="header-bottom-menu">Services</a>
-          <a href="#" class="header-bottom-menu">Price</a>
-          <div class="dropdown">
-            <div class="dropdownbtn"><a href="#">Pages <img src="./img/arrowbottom-black.svg"></a></div>
-            <div class="dropdowncontents">
-              <a href="#">Team</a>
-              <a href="#">Testimonial</a>
-              <a href="#">Gallery</a>
-              <a href="#">Appointment</a>
-              <a href="#">404 page</a>
-            </div>
-          </div>
-          <a href="#" class="header-bottom-menu">Contact Us</a>
-        </div>
-        <div class="header-bottom-right">
-          <a href="#"><img src="./img/search-white.svg"></a>
-          <a href="#">Book Appointment</a>
-        </div>
-      </div>
-    </div>
-  </header>
+  </div>
+</header>
 
-  <section id="slider">
+<section id="slider">
+  <div class="slider">
+    <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
     <div class="slides">
-
-      <div class="slide">
+      <div class="slide active">
         <img src="./img/carousel-3.jpg">
-        <p class="slide-subtitle">Spa & Beauty Center</p>
-        <p class="slide-title">Massage Treatment</p>
-        <p class="slide-info">Lorem rebum magna dolore amet lorem eirmod magna erat</p>
-        <p class="slide-info">diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
-        <div class="slide-btn">
-          <a href="#" class="slide-btn-letf">Get Start</a>
-          <a href="#" class="slide-btn-right">Book Now</a>
+        <div class="slide-contents">
+          <p class="slide-subtitle">SPA & BEAUTY CENTER</p>
+          <p class="slide-title">Massage Treatment</p>
+          <p class="slide-info">Lorem rebum magna dolore amet lorem eirmod magna erat</p>
+          <p class="slide-info">diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+          <div class="slide-action">
+            <a href="#" class="slide-start">Get Start</a>
+            <a href="#" class="slide-book">Book Now</a>
+          </div>
         </div>
       </div>
 
       <div class="slide">
         <img src="./img/carousel-2.jpg">
-        <p class="slide-subtitle">Spa & Beauty Center</p>
-        <p class="slide-title">Facial Treatment</p>
-        <p class="slide-info">Lorem rebum magna dolore amet lorem eirmod magna erat</p>
-        <p class="slide-info">diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
-        <div class="slide-btn">
-          <a href="#" class="slide-btn-letf">Get Start</a>
-          <a href="#" class="slide-btn-right">Book Now</a>
+        <div class="slide-contents">
+          <p class="slide-subtitle">SPA & BEAUTY CENTER</p>
+          <p class="slide-title">Facial Treatment</p>
+          <p class="slide-info">Lorem rebum magna dolore amet lorem eirmod magna erat</p>
+          <p class="slide-info">diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+          <div class="slide-action">
+            <a href="#" class="slide-start">Get Start</a>
+            <a href="#" class="slide-book">Book Now</a>
+          </div>
         </div>
       </div>
 
       <div class="slide">
         <img src="./img/carousel-1.jpg">
-        <p class="slide-subtitle">Spa & Beauty Center</p>
-        <p class="slide-title">Cellulite Treatment</p>
-        <p class="slide-info">Lorem rebum magna dolore amet lorem eirmod magna erat</p>
-        <p class="slide-info">diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
-        <div class="slide-btn">
-          <a href="#" class="slide-btn-letf">Get Start</a>
-          <a href="#" class="slide-btn-right">Book Now</a>
+        <div class="slide-contents">
+          <p class="slide-subtitle">SPA & BEAUTY CENTER</p>
+          <p class="slide-title">Cellulite Treatment</p>
+          <p class="slide-info">Lorem rebum magna dolore amet lorem eirmod magna erat</p>
+          <p class="slide-info">diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+          <div class="slide-action">
+            <a href="#" class="slide-start">Get Start</a>
+            <a href="#" class="slide-book">Book Now</a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="hero">
-    <div class="container">
-      <p>OUR SERVICE</p>
-      <p>Spa & Beauty Services</p>
-      <div class="cards">
-        <div class="card">
-
-          <div class="card-left">
-            <div class="card-left-text">
-              <p class="card-left-title">Skin Care</p>
-              <p class="card-left-subtitle">Lorem Ipsum is simply dummy text of the printing</p>
-              <p class="card-left-subtitle">and typesetting industry. Lorem Ipsum has been</p>
-              <p class="card-left-subtitle">the industry's standard dummy</p>
-              <a href="#" class="card-left-btn">Make Order</a>
-            </div>
-            <div class="card-left-img">
-              <img src="./img/services-1.jpg">
-            </div>
-          </div>
-          
-          <div class="card-right">
-            <div class="card-right-text">
-              <p class="card-right-title">Face Masking</p>
-              <p class="card-right-subtitle">Lorem Ipsum is simply dummy text of the printing</p>
-              <p class="card-right-subtitle">and typesetting industry. Lorem Ipsum has been</p>
-              <p class="card-right-subtitle">the industry's standard dummy</p>
-              <a href="#" class="card-right-btn">Make Order</a>
-            </div>
-            <div class="card-right-img">
-              <img src="./img/services-2.jpg">
-            </div>
-          </div>
-
-        </div>
-
-        <div class="card">
-
-          <div class="card-left">
-            <div class="card-left-text">
-              <p class="card-left-title">Stream Bath</p>
-              <p class="card-left-subtitle">Lorem Ipsum is simply dummy text of the printing</p>
-              <p class="card-left-subtitle">and typesetting industry. Lorem Ipsum has been</p>
-              <p class="card-left-subtitle">the industry's standard dummy</p>
-              <a href="#" class="card-left-btn">Make Order</a>
-            </div>
-            <div class="card-left-img">
-              <img src="./img/services-3.jpg">
-            </div>
-          </div>
-          
-          <div class="card-right">
-            <div class="card-right-text">
-              <p class="card-right-title">Facial Therapy</p>
-              <p class="card-right-subtitle">Lorem Ipsum is simply dummy text of the printing</p>
-              <p class="card-right-subtitle">and typesetting industry. Lorem Ipsum has been</p>
-              <p class="card-right-subtitle">the industry's standard dummy</p>
-              <a href="#" class="card-right-btn">Make Order</a>
-            </div>
-            <div class="card-right-img">
-              <img src="./img/services-4.jpg">
-            </div>
-          </div>
-          
-        </div>
-
-        <div class="card">
-
-          <div class="card-left">
-            <div class="card-left-text">
-              <p class="card-left-title">Body Massage</p>
-              <p class="card-left-subtitle">Lorem Ipsum is simply dummy text of the printing</p>
-              <p class="card-left-subtitle">and typesetting industry. Lorem Ipsum has been</p>
-              <p class="card-left-subtitle">the industry's standard dummy</p>
-              <a href="#" class="card-left-btn">Make Order</a>
-            </div>
-            <div class="card-left-img">
-              <img src="./img/services-5.jpg">
-            </div>
-          </div>
-          
-          <div class="card-right">
-            <div class="card-right-text">
-              <p class="card-right-title">Aroma Therapy</p>
-              <p class="card-right-subtitle">Lorem Ipsum is simply dummy text of the printing</p>
-              <p class="card-right-subtitle">and typesetting industry. Lorem Ipsum has been</p>
-              <p class="card-right-subtitle">the industry's standard dummy</p>
-              <a href="#" class="card-right-btn">Make Order</a>
-            </div>
-            <div class="card-right-img">
-              <img src="./img/services-6.jpg">
-            </div>
-          </div>
-          
-        </div>
-
-        <div class="card">
-
-          <div class="card-left">
-            <div class="card-left-text">
-              <p class="card-left-title">Mineral Baths</p>
-              <p class="card-left-subtitle">Lorem Ipsum is simply dummy text of the printing</p>
-              <p class="card-left-subtitle">and typesetting industry. Lorem Ipsum has been</p>
-              <p class="card-left-subtitle">the industry's standard dummy</p>
-              <a href="#" class="card-left-btn">Make Order</a>
-            </div>
-            <div class="card-left-img">
-              <img src="./img/services-3.jpg">
-            </div>
-          </div>
-          
-          <div class="card-right">
-            <div class="card-right-text">
-              <p class="card-right-title">Stone Therapy</p>
-              <p class="card-right-subtitle">Lorem Ipsum is simply dummy text of the printing</p>
-              <p class="card-right-subtitle">and typesetting industry. Lorem Ipsum has been</p>
-              <p class="card-right-subtitle">the industry's standard dummy</p>
-              <a href="#" class="card-right-btn">Make Order</a>
-            </div>
-            <div class="card-right-img">
-              <img src="./img/services-1.jpg">
-            </div>
-          </div>
-          
-        </div>
-
-      <a href="#">Service More</a>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="tabmenu"></section>
+<section id="tabs">
+  <div class="container">
+    <p class="tab-subtitle">Our Gallery</p>
+    <p class="tab-title">Let's See Our Gallery</p>
+    <div class="tab">
+      <div class="tab-buttons">
+        <div class="tab-btn active" data-tab="tab1">All Gallery</div>
+        <div class="tab-btn" data-tab="tab2">Skin Care</div>
+        <div class="tab-btn" data-tab="tab3">Stream Bath</div>
+        <div class="tab-btn" data-tab="tab4">Stone Therapy</div>
+        <div class="tab-btn" data-tab="tab5">Face Massage</div>
+      </div>
 
-  <section id="price"></section>
+      <div class="tab-contents">
+        <div class="tab-content" id="tab1">
+          <a href="#"><img src="./img/gallery-1.jpg"></a>
+          <a href="#"><img src="./img/gallery-2.jpg"></a>
+          <a href="#"><img src="./img/gallery-3.jpg"></a>
+          <a href="#"><img src="./img/gallery-4.jpg"></a>
+          <a href="#"><img src="./img/gallery-5.jpg"></a>
+          <a href="#"><img src="./img/gallery-6.jpg"></a>
+          <a href="#"><img src="./img/gallery-7.jpg"></a>
+          <a href="#"><img src="./img/gallery-8.jpg"></a>
+        </div>
 
-  <section id="card"></section>
+        <div class="tab-content" id="tab2">
+          <a href="#"><img src="./img/gallery-9.jpg"></a>
+          <a href="#"><img src="./img/gallery-10.jpg"></a>
+          <a href="#"><img src="./img/gallery-5.jpg"></a>
+          <a href="#"><img src="./img/gallery-1.jpg"></a>
+        </div>
 
-  <section id="review"></section>
+        <div class="tab-content" id="tab3">
+          <a href="#"><img src="./img/gallery-11.jpg"></a>
+          <a href="#"><img src="./img/gallery-12.jpg"></a>
+          <a href="#"><img src="./img/gallery-2.jpg"></a>
+          <a href="#"><img src="./img/gallery-6.jpg"></a>
+        </div>
 
-  <footer></footer>
+        <div class="tab-content" id="tab4">
+          <a href="#"><img src="./img/gallery-13.jpg"></a>
+          <a href="#"><img src="./img/gallery-2.jpg"></a>
+          <a href="#"><img src="./img/gallery-3.jpg"></a>
+          <a href="#"><img src="./img/gallery-7.jpg"></a>
+        </div>
+
+        <div class="tab-content" id="tab5">
+          <a href="#"><img src="./img/gallery-4.jpg"></a>
+          <a href="#"><img src="./img/gallery-6.jpg"></a>
+          <a href="#"><img src="./img/gallery-8.jpg"></a>
+          <a href="#"><img src="./img/gallery-14.jpg"></a>
+          <a href="#"><img src="./img/gallery-4.jpg"></a>
+          <a href="#"><img src="./img/gallery-8.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<body>
 </body>
 
 </html>

@@ -1,0 +1,352 @@
+.container {
+  padding: 0 250px;
+}
+
+/* header */
+
+/* svg 정리 */
+
+.header-left p img {
+  width: 20px;
+}
+
+.drop-btn img {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.header-right img {
+  height: 24px;
+}
+
+/* header 정렬 */
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header-left p {
+  display: flex;
+  align-items: center;
+}
+
+.header-center ul {
+  display: flex;
+}
+
+.header-center ul li {
+  padding: 20px;
+}
+
+.header-menu-active {
+  color: #e6c6a8;
+}
+
+.header-menu:hover {
+  color: #e6c6a8;
+}
+
+.drop-btn {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+}
+
+.drop-btn:hover {
+  color: #e6c6a8;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-contents {
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  width: 180px;
+}
+
+.dropdown.show .dropdown-contents {
+  display: block;
+}
+
+.dropdown-content {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content:hover {
+  color: #e6c6a8;
+}
+
+.header-right a {
+  padding: 10px;
+  position: relative;
+}
+
+.header-right a span {
+  padding: 5px;
+  background-color: #dead6f;
+  border-radius: 50px;
+  position: absolute;
+  top: -10px;
+  right: -3px;
+  font-size: .7rem;
+}
+
+/* slider */
+
+#slider {
+  background-image: url(../img/background-img.png);
+  background-size: cover;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0;
+}
+
+.slide-subtitle {
+  color: #dead6f;
+  margin-bottom: 30px;
+}
+
+.slide-title {
+  font-size: 36px;
+}
+
+.slide-title-color {
+  font-size: 36px;
+  color: #dead6f;
+}
+
+.slide-right a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  border: 1px solid gray;
+  text-align: center;
+  width: 200px;
+  margin-top: 30px;
+}
+
+.slide-right a img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid black;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+/* 탭 */
+
+/* 이미지 사이즈 정리 */
+
+.tabs-name img {
+  width: 20px;
+}
+
+.card-rating img {
+  width: 20px;
+}
+
+.card-wish img {
+  width: 20px;
+}
+
+/* 정렬 */
+
+.tabs {
+  padding: 30px 0;
+}
+
+.tabs-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-title {
+  font-size: 48px;
+}
+
+.tab-btn.active {
+  border-bottom: 2px solid #e6c6a8;
+}
+
+.tab-btn {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+.tabs-name a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border: 1.5px solid black;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.card-rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 24px;
+  color: #dead6f;
+  margin-bottom: 10px;
+}
+
+.card-action {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-add {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.card-wish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+/* 푸터 */
+
+footer {
+  background-color: white
+}
+
+/* 이미지 사이즈 조절 */
+
+.icons a img {
+  width: 20px;
+}
+
+/* 정렬 */
+
+.footer-top {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  padding: 50px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-subtitle {
+  color: #ccc;
+}
+
+.icons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.footer-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-menu {
+  padding: 5px 0;
+}
+
+form input[type="text"] {
+  width: 250px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #dead6f;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+form {
+  position: relative;
+  margin-top: 10px;
+}
