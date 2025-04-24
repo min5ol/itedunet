@@ -5,4 +5,4 @@ document.querySelector('.drop-btn').onclick = (e) => {
 
 window.onclick = () => {
   document.querySelector('.dropdown').classList.remove('show');
-};
+}

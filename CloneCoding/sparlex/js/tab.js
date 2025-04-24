@@ -10,3 +10,5 @@ tabBtns.forEach(btn => {
     document.getElementById(target).style.display = 'flex';
   });
 });
+
+document.getElementById('tab1').style.display = 'flex';
