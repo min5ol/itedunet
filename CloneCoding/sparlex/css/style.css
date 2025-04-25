@@ -3,8 +3,8 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  box-sizing: border-box;
   color: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,42 +15,39 @@ body {
   padding: 0 290.5px;
 }
 
-/* 헤더 */
-
-header {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 1;
-}
+/* header */
 
 .header-wrapper {
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
 }
 
-.header-wrapper p {
+.header-title {
   font-size: 48px;
-  font-weight: 700;
   color: deeppink;
+  font-weight: 600;
 }
 
 .header-wrapper ul {
   display: flex;
-}
-
-.header-menu-active {
-  font-size: 18px;
-  margin: 0 10px;
-  color: deeppink;
+  align-items: center;
 }
 
 .header-menu {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: darkgray;
+  transition: all 0.6s ease;
   margin: 0 10px;
-  translate: all 0.4s ease;
+}
+
+.header-menu-active {
+  font-size: 16px;
+  font-weight: 400;
+  color: deeppink;
+  margin: 0 10px;
 }
 
 .dropdown {
@@ -58,77 +55,98 @@ header {
 }
 
 .drop-btn {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: darkgray;
+  transition: all 0.6s ease;
   margin: 0 10px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  translate: all 0.4s ease;
 }
 
 .drop-btn i {
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .drop-contents {
   display: none;
   position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  top: 40px;
+  width: 150px;
   padding: 10px;
-  top: 50px;
-}
-
-.drop-content {
-  padding: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px 1px #ccc;
 }
 
 .dropdown.show .drop-contents {
   display: block;
 }
 
-.drop-btn:hover, .header-menu:hover {
-  color: deeppink;
+.drop-content {
+  padding: 10px 0;
 }
 
-.header-right {
+.header-action {
   display: flex;
   align-items: center;
 }
 
 .search {
+  width: 46px;
+  height: 46px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  padding: 10px;
   background-color: deeppink;
   border-radius: 50%;
+  transition: all 0.6s ease;
 }
 
 .search i {
+  font-size: 20px;
   color: white;
 }
 
-.book {
+.booking {
   padding: 10px 20px;
   background-color: deeppink;
-  border-radius: 50px;
+  font-size: 20px;
   color: white;
+  border-radius: 50px;
   margin-left: 10px;
+  transition: all 0.6s ease;
 }
 
-/* 슬라이드 */
+.header-menu:hover {
+  color: deeppink;
+}
+
+.drop-btn:hover {
+  color: deeppink;
+}
+
+.search:hover {
+  background-color: blueviolet;
+}
+
+.booking:hover {
+  background-color: blueviolet;
+}
+
+/* slider */
 
 .slider {
   position: relative;
 }
 
-.next, .prev {
+.prev, .next {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: deeppink;
+  transition: all 0.3s ease;
   z-index: 1;
   cursor: pointer;
 }
@@ -141,29 +159,20 @@ header {
   right: 30px;
 }
 
-.next i, .prev i {
-  font-size: 50px;
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.next:hover i, .prev:hover i {
-  color: deeppink;
-}
-
 .slides {
-  display: flex;
   width: 300vw;
-  transition: all 0.6s ease;
+  display: flex;
+  transition: all 0.4s ease;
 }
 
 .slide {
   width: 100vw;
   position: relative;
+  z-index: -1;
 }
 
-.slide-img img {
-  opacity: 0.7;
+.slide img {
+  opacity: 0.5;
 }
 
 .slide-contents {
@@ -175,23 +184,22 @@ header {
 
 .slide-subtitle {
   text-align: center;
-  font-size: 24px;
   color: deeppink;
-  font-weight: 400;
+  font-size: 24px;
   letter-spacing: 3px;
 }
 
 .slide-title {
   text-align: center;
+  color: black;
   font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .slide-info {
   text-align: center;
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 24px;
 }
 
 .slide-action {
@@ -201,52 +209,71 @@ header {
 }
 
 .start {
-  padding: 10px 20px;
+  padding: 10px 30px;
   background-color: white;
   color: deeppink;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
   border-radius: 50px;
-  margin-right: 5px;
+  margin-right: 10px;
+  transition: all 0.6s ease;
 }
 
-.now {
-  padding: 10px 20px;
+.book {
+  padding: 10px 30px;
   background-color: deeppink;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
   border-radius: 50px;
-  margin-left: 5px;
+  margin-left: 10px;
+  transition: all 0.6s ease;
 }
 
-/* 탭 */
+.next:hover, .prev:hover {
+  color: blueviolet;
+}
+
+.start:hover, .book:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+/* tabs */
+
+#tabs {
+  padding: 50px 0;
+}
 
 .tab-subtitle {
-  font-size: 20px;
-  color: deeppink;
   text-align: center;
-  font-weight: 300;
-  margin-top: 100px;
+  color: deeppink;
+  font-size: 24px;
+  letter-spacing: 3px;
 }
 
 .tab-title {
-  font-size: 60px;
   text-align: center;
+  color: black;
+  font-size: 60px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .tab-btns {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .tab-btn {
   padding: 10px 30px;
-  background-color: #f5f5f5;
+  font-size: 16px;
+  font-weight: 400;
   border: 1px solid deeppink;
+  background-color:floralwhite;
   border-radius: 50px;
+  transition: all 0.6s ease;
   margin: 0 10px;
-  transition: all 0.5s ease;
   cursor: pointer;
 }
 
@@ -255,135 +282,212 @@ header {
   color: white;
 }
 
-.tab-contents {
-  margin-top: 40px;
+.tab-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.tab-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 10px;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.tab-card p {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  color: blueviolet;
+  z-index: 2;
+  opacity: 0;
+}
+
+.tab-card i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  padding: 15px;
+  background-color: deeppink;
+  border-radius: 50%;
+  color: white;
+  z-index: 2;
+  transition: all 0.3s ease;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .tab-content {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
   gap: 40px;
 }
 
-.tab-content a {
+.tab-card img {
   width: 300px;
   border-radius: 10px;
-  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.tab-content img {
-  width: 300px;
-  border-radius: 10px;
-  transition: all 0.5s ease;
+.tab-card:hover .tab-bg {
+  opacity: 1;
 }
 
-.tab-content a img:hover {
+.tab-card:hover p {
+  opacity: 1;
+}
+
+.tab-card:hover i {
+  opacity: 1;
+}
+
+.tab-card i:hover {
+  background-color: blueviolet;
+}
+
+.tab-card:hover img {
   transform: scale(1.1);
 }
 
 /* special */
 
+#special {
+  padding: 50px 0;
+}
+
+.special-subtitle {
+  text-align: center;
+  color: deeppink;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.special-title {
+  text-align: center;
+  color: black;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .special-cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .special-card {
-  border-radius: 10px;
-}
-
-.card-top {
-  position: relative;
   overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.card-img img {
-  background-color: #f5f5f5;
-  width: 300px;
-  border-radius: 10px 10px 0 0;
+.special-card-top {
+  position: relative;
 }
 
-.card-bottom {
-  border-radius: 0 0 10px 10px;
-  padding: 30px 10px;
-  background-color: deeppink;
-  margin-top: -20px;
-  transition: all 0.6s ease;
-}
-
-.card-bottom-title {
-  font-size: 24px;
-  color: white;
-  text-align: center;
-  font-weight: 600;
-}
-
-.card-bottom-subtitle {
-  font-size: 16px;
-  color: white;
-  text-align: center;
-}
-
-.card-bg {
+.special-bg {
   position: absolute;
   width: 100%;
   height: 99%;
-  background-color: #cccccc60;
+  background-color: #47474767;
   top: -100%;
+  transition: all 0.4s ease;
   border-radius: 10px 10px 0 0;
-  transition: all 0.6s ease;
 }
 
-.card-icons {
+.special-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -95%;
+  left: 10px;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: -95%;
-  left: 20px;
-  transition: all 0.6s ease;
+  transition: all 0.4s ease;
 }
 
-.card-icons a {
+.special-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: deeppink;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  color: deeppink;
-  border-radius: 50%;
-  transition: all 0.6s ease;
   margin: 5px 0;
+  transition: all 0.4s ease;
 }
 
-.special-card:hover .card-bottom {
-  background-color:blueviolet;
+.special-card-top img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  background-color: #f0f0f0;
+  border-radius: 10px 10px 0 0;
 }
 
-.special-card:hover .card-bg {
+.special-card-bottom {
+  background-color: deeppink;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  margin-top: -10px;
+  transition: all 0.4s ease;
+}
+
+.card-bottom-title {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card-bottom-subtitle {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.special-card:hover .special-bg {
   top: 0;
 }
 
-.special-card:hover .card-icons {
+.special-card:hover .special-icons {
   top: 5%;
 }
 
-.card-icons a:hover {
+.special-card:hover .special-card-bottom {
+  background-color: blueviolet;
+}
+
+.special-icons a:hover {
   background-color: blueviolet;
   color: white;
 }
 
-.special-subtitle {
-  font-size: 20px;
-  color: deeppink;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 100px;
+/* footer */
+
+footer {
+  background-color: black;
+  padding: 50px 0;
 }
 
-.special-title {
-  font-size: 60px;
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 40px;
+#footer-2 {
+  background-color: black;
+  border-top: 1px solid #cccccc62;
+  padding: 10px 0;
 }
