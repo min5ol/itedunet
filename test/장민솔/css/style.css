@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 290.5px;
+}
+
+/* 헤더 */
+
+header {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-wrapper ul {
+  display: flex;
+}
+
+.header-menu {
+  margin: 0 10px;
+  font-weight: 500;
+  transition: all 0.6s ease;
+}
+
+.header-menu-active {
+  color: gold;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.drop-btn {
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.6s ease;
+}
+
+.header-menu:hover, .drop-btn:hover {
+  color: gold;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.drop-contents {
+  display: none;
+}
+
+.dropdown.show .drop-contents {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 10px;
+  background-color: white;
+  padding: 14px;
+  border: 1px solid #ccc;
+  z-index: 2;
+}
+
+.drop-content {
+  color: black;
+  padding: 10px 80px 10px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.drop-content:hover {
+  color: gold;
+}
+
+.drop-content:nth-child(5) {
+  border: none;
+}
+
+.drop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-btn i {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.header-right a i {
+  color: #ccc;
+}
+
+/* 슬라이더 */
+
+.slider {
+  position: relative;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  transition: all 0.4s ease;
+  font-size: 40px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.prev {
+  left: 60px;
+}
+
+.next {
+  right: 60px;
+}
+
+.prev:hover, .next:hover {
+  background-color: gold;
+}
+
+.slides {
+  display: flex;
+  position: relative;
+  width: 300vw;
+  transition: all 0.6s ease;
+}
+
+.slide {
+  width: 100vw;
+  position: relative;
+}
+
+.slide img {
+  width: 100vw;
+}
+
+.slide-contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.slide-subtitle {
+  color: white;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.slide-title {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.slide-action {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  padding: 15px 20px;
+  background-color: gold;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.contact {
+  padding: 15px 20px;
+  border: 1px solid gold;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+/* 탭 */
+
+#tabs {
+  padding: 40px 0;
+}
+
+.tab-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-btn.active {
+  background-color: gold;
+  color: black;
+}
+
+.tab-btn {
+  color: black;
+  padding: 10px 35.4px;
+  border-bottom: 2px solid gold;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-contents {
+  margin-top: 40px;
+}
+
+.tab-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-card img {
+  width: 440px;
+}
+
+.tab-card {
+  position: relative;
+  height: 352px;
+}
+
+.tab-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.tab-title {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.tab-action {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  background-color: goldenrod;
+  padding: 8px 15px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.tab-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.tab-icon i {
+  color: white;
+  font-size: 24px;
+}
+
+.tab-card:hover .tab-bg,
+.tab-card:hover .tab-title,
+.tab-card:hover .tab-action,
+.tab-card:hover .tab-icon {
+  opacity: 1;
+}
+
+/* 푸터 */
+
+footer {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  padding: 80px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  border-left: 2px solid gold;
+  padding: 0 0 0 20px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-1 img {
+  margin-bottom: 30px;
+}
+
+.footer-subtitle {
+  color: #a8a8a8;
+  margin-bottom: 5px;
+}
+
+.week {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-subtitle-2 {
+  color: #a8a8a8;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a8a8a85e;
+}
+
+.footer-1-icons {
+  margin-top: 30px;
+  color: #a8a8a8;
+}
+
+.footer-1-icons i {
+  margin: 0 20px 0 0;
+
+}

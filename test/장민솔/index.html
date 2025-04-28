@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/dropdown.js" defer></script>
+  <script src="./js/slide.js" defer></script>
+  <script src="./js/tab.js" defer></script>
+  <script src="https://kit.fontawesome.com/7d59311e3d.js" crossorigin="anonymous"></script>
+  <title>장민솔 UI 구현 시험</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-wrapper">
+        <ul>
+          <li><a href="#" class="header-menu-active">HOME</a></li>
+          <div class="dropdown">
+            <div class="drop-btn">COMPANY<i class="fa-solid fa-chevron-down"></i></div>
+            <div class="drop-contents">
+              <div class="drop-content">ABOUT US</div>
+              <div class="drop-content">OUR PEOPLE</div>
+              <div class="drop-content">TESTIMONIALS</div>
+              <div class="drop-content">FAQ</div>
+              <div class="drop-content">PRICING</div>
+            </div>
+          </div>
+          <li><a href="#" class="header-menu">PROJECTS</a></li>
+          <li><a href="#" class="header-menu">SERVICES</a></li>
+          <li><a href="#" class="header-menu">FEATURES</a></li>
+          <li><a href="#" class="header-menu">NEWS</a></li>
+          <li><a href="#" class="header-menu">CONTACT</a></li>
+        </ul>
+        <div class="header-right">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="slider">
+    <div class="slider">
+      <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+      <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+      <div class="slides">
+        <div class="slide">
+          <img src="./img/bg1.jpg">
+          <div class="slide-contents">
+            <p class="slide-subtitle">17 YEARS OF EXCELLENCE IN</p>
+            <p class="slide-title">CONSTRUTION INDUSTRY</p>
+            <div class="slide-action">
+              <a href="#" class="service">OUR SERVICES</a>
+              <a href="#" class="contact">CONTACT NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./img/bg2.jpg">
+          <div class="slide-contents">
+            <p class="slide-subtitle">17 YEARS OF EXCELLENCE IN</p>
+            <p class="slide-title">CONSTRUTION INDUSTRY</p>
+            <div class="slide-action">
+              <a href="#" class="service">OUR SERVICES</a>
+              <a href="#" class="contact">CONTACT NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./img/bg3.jpg">
+          <div class="slide-contents">
+            <p class="slide-subtitle">17 YEARS OF EXCELLENCE IN</p>
+            <p class="slide-title">CONSTRUTION INDUSTRY</p>
+            <div class="slide-action">
+              <a href="#" class="service">OUR SERVICES</a>
+              <a href="#" class="contact">CONTACT NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tabs">
+    <div class="container">
+      <div class="tab">
+        <div class="tab-btns">
+          <div class="tab-btn active" data-tab="tab1">SHOW ALL</div>
+          <div class="tab-btn" data-tab="tab2">CONNERCIAL</div>
+          <div class="tab-btn" data-tab="tab3">EDUCATION</div>
+          <div class="tab-btn" data-tab="tab4">GOVERNMENT</div>
+          <div class="tab-btn" data-tab="tab5">INFRASTRUCTURE</div>
+          <div class="tab-btn" data-tab="tab6">RESIDENTAIL</div>
+          <div class="tab-btn" data-tab="tab7">HEALTHCARE</div>
+        </div>
+        <div class="tab-contents">
+          <div class="tab-content" id="tab1">
+            <div class="tab-cards">
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project1.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project2.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project3.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project4.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project5.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab2" style="display: none;">
+            <div class="tab-cards">
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project2.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project5.jpg" alt="">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab3" style="display: none;">
+            <div class="tab-cards">
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project3.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project5.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab4" style="display: none;">
+            <div class="tab-cards">
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project4.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project2.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project1.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project5.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project5.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab5" style="display: none;">
+            <div class="tab-cards">
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab6" style="display: none;">
+            <div class="tab-cards">
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project1.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project2.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project3.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project4.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project5.jpg" alt="">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab7" style="display: none;">
+            <div class="tab-cards">
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project5.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project2.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project4.jpg" alt="">
+              </div>
+
+              <div class="tab-card">
+                <div class="tab-bg"></div>
+                <p class="tab-title">CAPITAL TELTWAY BUILDING</p>
+                <a href="#" class="tab-action">COMMERCIAL, INTERIORS</a>
+                <div class="tab-icon"><i class="fa-solid fa-plus"></i></div>
+                <img src="./img/project6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-1">
+          <p class="footer-title">ABOUT US</p>
+          <img src="./img/logo.png">
+          <p class="footer-subtitle">Lorem ipsum dolor sit amet. Consectetur</p>
+          <p class="footer-subtitle">adipisicing elit, sed do eiusmod tmpor inci</p>
+          <p class="footer-subtitle">done idunt ut labore et dolore magna aliqua</p>
+          <div class="footer-1-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+        <div class="footer-2">
+          <p class="footer-title">WORKING HOURS</p>
+          <p class="footer-subtitle">We work 7 days a week, every day excluding</p>
+          <p class="footer-subtitle">major holidays. Contact us if you have an</p>
+          <p class="footer-subtitle">emergency, with our Hotline and Contact</p>
+          <p class="footer-subtitle">form.</p>
+          <p>&nbsp;</p>
+          <div class="week">
+            <p class="footer-subtitle">Monday - Friday:</p>
+            <p class="footer-subtitle">10:00 - 16:00</p>
+          </div>
+          <div class="week">
+            <p class="footer-subtitle">Saturday:</p>
+            <p class="footer-subtitle">12:00 - 15:00</p>
+          </div>
+          <div class="week">
+            <p class="footer-subtitle">Sunday and holidays:</p>
+            <p class="footer-subtitle">09:00 - 12:00</p>
+          </div>
+        </div>
+        <div class="footer-3">
+          <div class="footer-title">SERVICES</div>
+          <p class="footer-subtitle-2"><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp;Pre-Construction</p>
+          <p class="footer-subtitle-2"><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp;General Contracting</p>
+          <p class="footer-subtitle-2"><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp;Construction Management</p>
+          <p class="footer-subtitle-2"><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp;Design and Build</p>
+          <p class="footer-subtitle"><i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp;Self-Perform Construction</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
