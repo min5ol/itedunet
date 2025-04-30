@@ -1,6 +1,6 @@
-package class429;
+package ch00;
 
-public class byteImplicitCasting
+public class byteImplictCasting
 {
 
 	public static void main(String[] args)

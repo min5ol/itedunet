@@ -1,20 +1,24 @@
-package class429;
+package ch00;
 
-public class floatImplictCasting
+public class intImplictCasting 
 {
+
 	public static void main(String[] args) 
 	{
-		float a = 3.14f;
+		int a = 9;
 		
 		byte b;
 		short c;
-		int d;
-		long e;
+		long d;
 		
+		float e;
 		double f;
 		
 		char g;
 		
+		d = a;
+		e = a;
 		f = a;
 	}
+
 }

@@ -1,4 +1,4 @@
-package class429;
+package ch00;
 
 public class doubleImplictCasting
 {

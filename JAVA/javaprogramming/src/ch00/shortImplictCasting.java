@@ -1,14 +1,14 @@
-package class429;
+package ch00;
 
-public class intImplictCasting 
+public class shortImplictCasting 
 {
 
 	public static void main(String[] args) 
 	{
-		int a = 9;
+		short a = 9;
 		
 		byte b;
-		short c;
+		int c;
 		long d;
 		
 		float e;
@@ -16,6 +16,7 @@ public class intImplictCasting
 		
 		char g;
 		
+		c = a;
 		d = a;
 		e = a;
 		f = a;
