@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.Date" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,14 +10,8 @@
 	<title>Insert title here</title>
 </head>
 <body>
-	<header class="pb-3 mb-4 border-bottom">
-		<a href="./welcom.jsp" class="d-flex align-items-center text-dark text-decoration-none">
-			<i class="fa-solid fa-house-chimney"></i>
-			<span class="fs-4">Home</span>
-		</a>
-	</header>
-	
-	<%! String greeting = "Welcome to Book Shopping Mall";
+	<%@ include file="menu.jsp" %>
+	<%! String greeting = "도서 쇼핑몰에 오신 것을 환영합니다.";
 		String tagline = "Welcome to Web Market!";
 	%>
 	
@@ -31,12 +26,29 @@
 		<div class="col-md-12">
 			<div class="h-100 p-5">
 				<h3><%=tagline %></h3>
+				<%
+					Date day =new java.util.Date();
+					String am_pm;
+					int hour = day.getHours();
+					int minute = day.getMinutes();
+					int second = day.getSeconds();
+					
+					if(hour/12==0)
+					{
+						am_pm = "AM";
+					}
+					else
+					{
+						am_pm = "PM";
+						hour = hour-12;
+					}
+					
+					String CT = hour+":"+minute+":"+second+" "+am_pm;
+					out.println("현재 접속 시각: "+CT+"\n");
+				%>
 			</div>
 		</div>
 	</div>
-	
-	<footer class="pt-3 mt-4 text-body-secondary border-top">
-		&copy; BookMarket
-	</footer>
+	<%@ include file="footer.jsp" %>
 </body>
 </html>
