@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="dto.Book" %>
 <%@ page import="dao.BookRepository" %>
+<%@ page errorPage="exceptionNoBookId.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,6 +32,7 @@
          <div class="col-md-5">
             <img src="./resources/images/<%=book.getFilename() %>" style="width : 70%">
          </div>
+         
          <div class="col-md-6">
             <h3><b><%=book.getName() %></b></h3>
             <p><%=book.getDescription() %></p>
@@ -44,6 +46,7 @@
             <p><a href="#" class="btn btn-info">도서주문 &raquo;</a>
             <a href="./books.jsp" class="btn btn-secondary">도서목록 &raquo;</a>
          </div>
+         
       </div>
       <jsp:include page="footer.jsp"></jsp:include>
    </div>
