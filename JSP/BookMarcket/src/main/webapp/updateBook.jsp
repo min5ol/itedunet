@@ -98,7 +98,7 @@
                 <div class="mb-3 row">
                     <label class="col-sm-2">재고수</label>
                     <div class="col-sm-5">
-                        <input type="text" name="unitsInStock" id="unitsInStock" class="form-control" value='<%=rs.getString("b_unitsInStock") %>'>
+                        <input type="text" name="unitInStock" id="unitInStock" class="form-control" value='<%=rs.getString("b_unitInStock") %>'>
                     </div>
                 </div>
 
