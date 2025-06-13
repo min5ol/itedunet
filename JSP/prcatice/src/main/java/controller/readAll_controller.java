@@ -1,8 +1,11 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import dao.member_repository;
+import dto.member;
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -25,13 +28,8 @@ public class readAll_controller extends HttpServlet
 		ArrayList<member> arr = repo.readAll();
 		
 		// 뷰 이동
-		
-	}
-
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
-	{
-		// TODO Auto-generated method stub
-		super.doPost(req, resp);
+		req.setAttribute("arr", arr);
+		RequestDispatcher ds = req.getRequestDispatcher("allview.jsp");
+		ds.forward(req, resp);
 	}
 }

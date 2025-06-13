@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/update")
-public class update_controller extends HttpServlet 
+public class update_controller extends HttpServlet
 {
 	member_repository repo = member_repository.getInstance();
 
