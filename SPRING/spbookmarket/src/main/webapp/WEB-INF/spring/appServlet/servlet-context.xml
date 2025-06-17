@@ -14,7 +14,7 @@
 	
 	<!-- 1.핸들러매핑과 핸들러아답터를 자동으로 객체생성함
 	     2.@annotation을 사용할 수있게 설정해줌 -->
-	<annotation-driven />
+	<annotation-driven enable-matrix-variables="true" />
 
 	<!-- css,image,js와 같은 공유되는 파일의 위치를 정하고 MVC외 처리를 실시함
 	     디스페쳐서블리은 관여하지말고 그냥 통과시켜~
@@ -32,4 +32,5 @@
 	<!-- 1. 핸들러매핑
 	     2. 뷰리졸브
 	     3. com.springmvc.controller.HomeController : @Controller -->
+	     
 </beans:beans>
