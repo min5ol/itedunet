@@ -12,4 +12,5 @@ public interface BookRepository
 	List<Book> getBookListByCategory(String category); // 카테고리로 조회
 	Set<Book> getBookListByFilter(Map<String, List<String>> filter); // 책 필터링
 	Book getBookById(String bookId); // 도서 아이디로 책 조회
+	void setNewBook(Book book); // 책 등록
 }
