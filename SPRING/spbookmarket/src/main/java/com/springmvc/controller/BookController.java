@@ -31,6 +31,7 @@ import com.springmvc.domain.Book;
 import com.springmvc.exception.BookIdException;
 import com.springmvc.exception.CategoryException;
 import com.springmvc.service.BookService;
+import com.springmvc.validator.UnitsInStockValidator;
 
 @Controller
 @RequestMapping("/books")
@@ -40,6 +41,9 @@ public class BookController
 	
 	@Autowired
 	private BookService bookService;
+	
+	@Autowired
+	private UnitsInStockValidator unitsInStockValidator;
 	
 	@GetMapping
 	public String requestBookList(Model model)
@@ -153,6 +157,7 @@ public class BookController
 	@InitBinder
 	public void initBinder(WebDataBinder binder)
 	{
+		binder.setValidator(unitsInStockValidator);
 		binder.setAllowedFields("bookId", "name", "unitPrice", "author", "description", "publisher", "category", "unitInStock", "totalPages", "releaseDate", "condition", "bookImage");
 	}
 	

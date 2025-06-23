@@ -33,6 +33,6 @@ public class BookIdValidator implements ConstraintValidator<BookId, String>
 			return false;
 		}
 		
-		return false;
+		return true;
 	}
 }
