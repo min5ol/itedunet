@@ -8,6 +8,6 @@
 </head>
 <body>
 	<h1>사진</h1>
-	<img src="">
+	<img src="resources/images/${img}">
 </body>
 </html>

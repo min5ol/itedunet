@@ -31,6 +31,7 @@ import com.springmvc.domain.Book;
 import com.springmvc.exception.BookIdException;
 import com.springmvc.exception.CategoryException;
 import com.springmvc.service.BookService;
+import com.springmvc.validator.BookValidator;
 import com.springmvc.validator.UnitsInStockValidator;
 
 @Controller
@@ -44,6 +45,9 @@ public class BookController
 	
 	@Autowired
 	private UnitsInStockValidator unitsInStockValidator;
+	
+	@Autowired
+	private BookValidator bookValidator;
 	
 	@GetMapping
 	public String requestBookList(Model model)
@@ -108,7 +112,7 @@ public class BookController
 	}
 	
 	@PostMapping("/add")
-	public String submitAddNewBook(@Valid @ModelAttribute("NewBook") Book book, HttpServletRequest request, BindingResult result) {
+	public String submitAddNewBook(@Valid @ModelAttribute("NewBook") Book book, BindingResult result, HttpServletRequest request) {
 	    
 		if(result.hasErrors())
 	    {
@@ -157,8 +161,8 @@ public class BookController
 	@InitBinder
 	public void initBinder(WebDataBinder binder)
 	{
-		binder.setValidator(unitsInStockValidator);
-		binder.setAllowedFields("bookId", "name", "unitPrice", "author", "description", "publisher", "category", "unitInStock", "totalPages", "releaseDate", "condition", "bookImage");
+		binder.setValidator(bookValidator);
+		binder.setAllowedFields("bookId", "name", "unitPrice", "author", "description", "publisher", "category", "unitsInStock", "totalPages", "releaseDate", "condition", "bookImage");
 	}
 	
 	@ExceptionHandler(value= {BookIdException.class})

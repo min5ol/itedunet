@@ -14,7 +14,7 @@ import javax.validation.Constraint;
 @Documented
 public @interface BookId 
 {
-	String message() default "";
+	String message() default "{BookId.NewBook.bookId}";
 	Class<?>[] groups() default {};
 	Class<?>[] payload() default {};
 }

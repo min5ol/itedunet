@@ -13,15 +13,15 @@ import com.springmvc.validator.BookId;
 public class Book
 {
 	@BookId
-	@Pattern(regexp="ISBN[1-9]+")
+	@Pattern(regexp="ISBN[1-9]+", message="{Pattern.NewBook.bookId}")
 	private String bookId;
 	
-	@Size(min=4, max=50)
+	@Size(min=4, max=50, message="{Size.NewBook.name}")
 	private String name;
 	
-	@Min(value=0)
-	@Digits(integer=8, fraction=2)
-	@NotNull
+	@Min(value=0, message="{Min.NewBook.unitPrice}")
+	@Digits(integer=8, fraction=2, message="{Digits.NewBook.unitPrice}")
+	@NotNull(message="{NotNull.NewBook.unitPrice}")
 	private int unitPrice;
 	
 	private String author;
@@ -166,4 +166,20 @@ public class Book
 	{
 		this.imageFilename = imageFilename;
 	}
+	
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (this == obj) return true;
+		if (obj == null || getClass() != obj.getClass()) return false;
+		Book other = (Book) obj;
+		return bookId != null && bookId.equals(other.getBookId());
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return bookId != null ? bookId.hashCode() : 0;
+	}
+
 }

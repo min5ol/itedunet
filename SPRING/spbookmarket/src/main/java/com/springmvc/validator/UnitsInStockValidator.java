@@ -19,7 +19,7 @@ public class UnitsInStockValidator implements Validator
 		Book book = (Book) target;
 		if (book.getUnitPrice() >= 10000 && book.getUnitsInStock() > 99)
 		{
-			errors.rejectValue("UnitsInStock", "UnitsInStockValidator.message");
+			errors.rejectValue("unitsInStock", "UnitsInStockValidator.message");
 		}
 	}
 }
