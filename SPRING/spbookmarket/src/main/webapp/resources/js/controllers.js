@@ -11,5 +11,11 @@ function removeFromCart(action)
 	console.log(action);
 	document.removeForm.action = action;
 	document.removeForm.submit();
-	window.location.reload();
+	setTimeout(() =>
+	{
+		console.log("1초 후 reload()");
+		window.location.reload();
+	}, 100);
 }
+
+

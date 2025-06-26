@@ -27,6 +27,10 @@
 	
 	<div class="container">
 		<div>
+			<form:form method="POST" action="<c:url value='/cart/clear'/>">
+  				<button type="submit" class="btn btn-danger">전체삭제</button>
+			</form:form>
+
 			<a href="#" class="btn btn-success float-right">주문하기</a>
 		</div>
 		<div style="padding-top: 50px">
@@ -38,7 +42,8 @@
 					<th>소계</th>
 					<th>비고</th>
 				</tr>
-				<form:form name="removeForm" method="PUT">
+				<form:form name="removeForm" method="POST" action="<c:url value='/cart/remove/${item.value.book.bookId}'/>">
+					<input type="hidden" name="_method" value="PUT"/>
 					<c:forEach items="${cart.cartItems}" var="item">
 					<tr>
 						<td>${item.value.book.bookId}-${item.value.book.name}</td>

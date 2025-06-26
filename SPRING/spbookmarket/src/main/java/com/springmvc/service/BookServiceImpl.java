@@ -9,12 +9,16 @@ import org.springframework.stereotype.Service;
 
 import com.springmvc.domain.Book;
 import com.springmvc.repository.BookRepository;
+import com.springmvc.repository.CartRepository;
 
 @Service
 public class BookServiceImpl implements BookService
 {
 	@Autowired
 	private BookRepository bookRepository;
+	
+	@Autowired
+	private CartRepository cartRepository;
 	
 	public List<Book> getAllBookList()
 	{
