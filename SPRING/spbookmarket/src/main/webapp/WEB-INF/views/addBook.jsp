@@ -11,22 +11,6 @@
 <title>도서 등록</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand navbar-dark bg-dark">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="./home">Home</a>
-			</div>
-		</div>
-	</nav>
-	
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="display-3">
-				<spring:message code="addBook.form.title.label" />
-			</h1>
-		</div>
-	</div>
-	
 	<div class="container">
 		<div class="float-right">
 			<form:form action="${pageContext.request.contextPath}/logout" method="POST">
@@ -160,10 +144,6 @@
 			</div>
 		</fieldset>
 		</form:form>
-		<hr>
-	<footer>
-		<p>&copy; BookMarket</p>
-	</footer>
 	</div>
 </body>
 </html>

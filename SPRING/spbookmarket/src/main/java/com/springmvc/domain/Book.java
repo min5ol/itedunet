@@ -37,6 +37,7 @@ public class Book implements Serializable
 	private String condition;
 	private MultipartFile bookImage;
 	private String imageFilename;
+	private String fileName;
 	
 	public Book()
 	{
@@ -169,6 +170,16 @@ public class Book implements Serializable
 	public void setImageFilename(String imageFilename)
 	{
 		this.imageFilename = imageFilename;
+	}
+	
+	public String getFileName()
+	{
+		return fileName;
+	}
+	
+	public void setFileName(String fileName)
+	{
+		this.fileName = fileName;
 	}
 	
 	@Override

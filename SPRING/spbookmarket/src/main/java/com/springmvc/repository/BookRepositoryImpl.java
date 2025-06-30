@@ -11,9 +11,21 @@ import org.springframework.stereotype.Repository;
 import com.springmvc.domain.Book;
 import com.springmvc.exception.BookIdException;
 
+import javax.sql.DataSource;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+
 @Repository
 public class BookRepositoryImpl implements BookRepository
 {
+	private JdbcTemplate template;
+	
+	@Autowired
+	public void setJdbctemplate(DataSource dataSource)
+	{
+		this.template = new JdbcTemplate(dataSource);
+	}
+	
 	private List<Book> listOfBooks = new ArrayList<Book>();
 	
 	public BookRepositoryImpl()
@@ -50,6 +62,8 @@ public class BookRepositoryImpl implements BookRepository
 	@Override
 	public List<Book> getAllBookList()
 	{
+		String SQL = "SELECT * FROM book";
+		List<Book> listOfBooks = template.query(SQL, new BookRowMapper());
 		return listOfBooks;
 	}
 
@@ -57,15 +71,9 @@ public class BookRepositoryImpl implements BookRepository
 	public List<Book> getBookListByCategory(String category) {
 		System.out.println("repo : getBookListByCategory");
 		List<Book> booksByCategory = new ArrayList<Book>();
+		String SQL = "SELECT * FROM book where b_category LIKE '%" + category + "%'";
+		booksByCategory = template.query(SQL, new BookRowMapper());
 		
-		for(int i = 0; i<listOfBooks.size(); i++)
-		{
-			Book book = listOfBooks.get(i);
-			if(category.equalsIgnoreCase(book.getCategory()))
-			{
-				booksByCategory.add(book);
-			}
-		}
 		return booksByCategory;
 	}
 
@@ -74,41 +82,28 @@ public class BookRepositoryImpl implements BookRepository
 	{
 		Set<Book> booksByPublisher = new HashSet<Book>();
 		Set<Book> booksByCategory = new HashSet<Book>();
-		
-		Set<String> booksByFilter = filter.keySet();
-		
-		if(booksByFilter.contains("publisher"))
+		Set<String> criterias = filter.keySet();
+
+		if(criterias.contains("publisher"))
 		{
 			for(int j=0; j<filter.get("publisher").size(); j++)
 			{
 				String publisherName = filter.get("publisher").get(j);
-				System.out.println("publisherName : " + publisherName);
-				for(int i=0;i<listOfBooks.size();i++)
-				{
-					Book book = listOfBooks.get(i);
-					
-					if(publisherName.equalsIgnoreCase(book.getPublisher()))
-					{
-						booksByPublisher.add(book);
-					}
-					System.out.println("book : " + book);
-				}
+				String SQL = "SELECT * FROM book where b_publisher LIKE '%" + publisherName + "%'";
+				booksByPublisher.addAll(template.query(SQL, new BookRowMapper()));
 			}
 		}
 		
-		if(booksByFilter.contains("category"))
+		if(criterias.contains("category"))
 		{
 			for(int i=0; i<filter.get("category").size(); i++)
 			{
 				String category = filter.get("category").get(i);
-				System.out.println("category : " + category);
-				List<Book> list = getBookListByCategory(category);
-				booksByCategory.addAll(list);
+				String SQL = "SELECT * FROM book where b_category LIKE '%" + category + "%'";
+				booksByCategory.addAll(template.query(SQL, new BookRowMapper()));
 			}
 		}
-		
 		booksByCategory.retainAll(booksByPublisher);
-		
 		return booksByCategory;
 	}
 
@@ -116,14 +111,14 @@ public class BookRepositoryImpl implements BookRepository
 	public Book getBookById(String bookId)
 	{
 		Book bookInfo = null;
-		for(int i=0; i<listOfBooks.size(); i++)
+		
+		String SQL = "SELECT count(*) FROM book WHERE b_bookId=?";
+		int rowCount = template.queryForObject(SQL, Integer.class, bookId);
+		
+		if(rowCount != 0)
 		{
-			Book book = listOfBooks.get(i);
-			if(book != null && book.getBookId() != null && book.getBookId().equals(bookId))
-			{
-				bookInfo = book;
-				break;
-			}
+			SQL = "SELECT * FROM book where b_bookId=?";
+			bookInfo = template.queryForObject(SQL, new Object[] {bookId}, new BookRowMapper());
 		}
 		
 		if(bookInfo == null)
