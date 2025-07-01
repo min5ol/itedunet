@@ -13,4 +13,6 @@ public interface BookRepository
 	Set<Book> getBookListByFilter(Map<String, List<String>> filter); // 책 필터링
 	Book getBookById(String bookId); // 도서 아이디로 책 조회
 	void setNewBook(Book book); // 책 등록
+	void setUpdateBook(Book book); // 책 수정
+	void setDeleteBook(String bookId); // 책 삭제
 }

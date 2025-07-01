@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,10 +17,10 @@
 			<div class="col-md-4">
 				<c:choose>
 					<c:when test="${book.getBookImage() == null}">
-						<img src="<c:url value="/resources/images/${book.getBookId()}.png"/>" style="width:100%"/>
+						<img src="<c:url value="/resources/images/${book.fileName}"/>" style="width:100%"/>
 					</c:when>
 					<c:otherwise>
-						<img src="<c:url value='/resources/images/${book.imageFilename}' />" style="width: 100%"/>
+						<img src="<c:url value='/resources/images/${book.fileName}'/>" style="width: 100%"/>
 					</c:otherwise>
 				</c:choose>
 			</div>
@@ -39,6 +40,10 @@
 				<p><a href="javascript:addToCart('../cart/add/${book.bookId}')" class="btn btn-primary">도서주문 &raquo;</a>
 				<a href="<c:url value="/cart"/>" class="btn btn-warning">장바구니 &raquo;</a>
 				<a href="<c:url value="/books"/>" class="btn btn-secondary">도서목록 &raquo;</a>
+				<sec:authorize access="isAuthenticated()">
+					<a href="${pageContext.request.contextPath}/books/update?id=${book.bookId}" class="btn btn-success">수정&raquo;</a>
+					<a href="<c:url value="javascript:deleteConfirm('${book.bookId}')"/>" class="btn btn-danger">삭제&raquo;</a>
+				</sec:authorize>
 				</form:form>
 			</div>
 		</div>
